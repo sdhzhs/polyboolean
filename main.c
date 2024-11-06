@@ -193,5 +193,53 @@ int main (int argc, char *argv[])
      }
    }
 
+   printf("-----------------------------\n");
+
+   for(j=0; j<9; j++)
+   {
+     printf("Move: %d\n", j);
+
+     poly2[0][0] = -3.0+j*0.5;
+     poly2[0][1] = 1.0;
+     poly2[1][0] = -3.0+j*0.5;
+     poly2[1][1] = -1.0;
+     poly2[2][0] = -1.0+j*0.5;
+     poly2[2][1] = -1.0;
+     poly2[3][0] = -1.0+j*0.5;
+     poly2[3][1] = 1.0;
+
+     PolyIntersect(poly1, poly2, polyi, 6, 4, &npoints);
+     
+     printf("Points of intersected polygon: %d\n", npoints);
+     for(i=0; i<npoints; i++)
+     {
+       printf("Intersected polygon: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+     }
+
+     PolyIntersect(poly2, poly1, polyi, 4, 6, &npoints);
+
+     printf("Points of intersected polygon: %d\n", npoints);
+     for(i=0; i<npoints; i++)
+     {
+       printf("Intersected polygon: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+     }
+
+     PolyMerge(poly1, poly2, polyi, 6, 4, &npoints);
+
+     printf("Points of merged polygon: %d\n", npoints);
+     for(i=0; i<npoints; i++)
+     {
+       printf("Merged polygon: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+     }
+
+     PolyMerge(poly2, poly1, polyi, 4, 6, &npoints);
+
+     printf("Points of merged polygon: %d\n", npoints);
+     for(i=0; i<npoints; i++)
+     {
+       printf("Merged polygon: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+     }
+   }
+
    return 0;
 }
