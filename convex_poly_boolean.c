@@ -335,6 +335,7 @@ bool OnPolyNodes(real p[][3], real p0[3], int* nodeid, int nps) //predicate a po
   return isOnNodes;
 }
 
+//boolean operations between two convex polygons
 void PolyIntersect(real poly1[][3], real poly2[][3], real polyi[][3], int nps1, int nps2, int* npsi) //intersect operation of two 3D convex polygons
 {
   int i, j, n, l, inext, iprev, ninners, ninsecs, npoints, innerflag, insecflag, ibinsec[4];
@@ -597,7 +598,7 @@ void PolyIntersect(real poly1[][3], real poly2[][3], real polyi[][3], int nps1, 
   }*/
 }
 
-void PolyMerge(real poly1[][3], real poly2[][3], real polym[][3], int nps1, int nps2, int* npsm) //merge operation of two 3D convex polygons
+void PolyMerge(real poly1[][3], real poly2[][3], real polym[][3], int nps1, int nps2, int* npsm) //union operation of two 3D convex polygons
 {
   int i, j, n, l, inext, iprev, ninners, ninsecs, npoints, innerflag, insecflag, ibinsec[4];
   int innerflags[nps1], insecflags[nps1], ibinsecs[2*nps1];
@@ -712,6 +713,19 @@ void PolyMerge(real poly1[][3], real poly2[][3], real polym[][3], int nps1, int 
   }
 
   printf("Points of inner and intersect: %d, %d\n", ninners, ninsecs);
+
+  if(ninners == nps1 && ninsecs == 0)
+  {
+    *npsm = nps2;
+    for(n=0; n<nps2; n++)
+    {
+      for(j=0; j<3; j++)
+      {
+        polym[n][j] = poly2[n][j];
+      }
+    }
+    return;
+  }
 
   npoints = 0;
   insecflag = -1;
@@ -887,26 +901,19 @@ void PolyMerge(real poly1[][3], real poly2[][3], real polym[][3], int nps1, int 
   }*/
 }
 
-bool EraseSamePointsInPoly(real poly[][3], real polyn[][3], int nps, int* npsn) //erase repeated points in one polygon
+bool EraseSamePointsInPoly(real poly[][ND_ND], real polyn[][ND_ND], int nps, int* npsn) //erase repeated points in one polygon
 {
   int inext;
-  bool hasSamePoints;
+  bool hasSamePoints, allSamePoints;
   real tol, dis;
-  real v[3];
+  real v[ND_ND];
 
   tol = 1e-6;
   
   *npsn = 0;
   hasSamePoints = false;
+  allSamePoints = true;
   
-  if(nps == 1)
-  {
-    for(int j=0; j<ND_ND; j++)
-      polyn[*npsn][j] = poly[0][j];
-    (*npsn)++;
-    return false;
-  }
-
   for(int i=0; i<nps; i++)
   {
     inext = (i+1)%nps;
@@ -914,17 +921,25 @@ bool EraseSamePointsInPoly(real poly[][3], real polyn[][3], int nps, int* npsn) 
     {   
       v[j] = poly[inext][j] - poly[i][j];
     }
-    dis = sqrt(DotProduct(v,v,3));
+    dis = sqrt(DotProduct(v,v,ND_ND));
     if(dis < tol)
     {
       hasSamePoints = true;
     }
     else
     {
+      allSamePoints = false;
       for(int j=0; j<ND_ND; j++)
         polyn[*npsn][j] = poly[i][j];
       (*npsn)++;
     }
+  }
+
+  if(nps > 0 && allSamePoints)
+  {
+    for(int j=0; j<ND_ND; j++)
+      polyn[*npsn][j] = poly[0][j];
+    (*npsn)++;
   }
 
   return hasSamePoints;
