@@ -26,6 +26,7 @@ int main (int argc, char *argv[])
    poly1[2][0] = 0.0;
    poly1[2][1] = 1.0;
 
+   //intersection and union of two congruent triangles, horizontal movement
    for(j=0; j<4; j++)
    {
      printf("Move: %d\n", j);
@@ -72,6 +73,7 @@ int main (int argc, char *argv[])
 
    printf("-----------------------------\n");
 
+   //intersection and union of two congruent triangles, vertical movement
    for(j=0; j<5; j++)
    {
      printf("Move: %d\n", j);
@@ -81,6 +83,100 @@ int main (int argc, char *argv[])
      poly2[1][0] = 1.0;
      poly2[1][1] = -1.0+j*0.5;
      poly2[2][0] = 0.0;
+     poly2[2][1] = j*0.5;
+
+     PolyIntersect(poly1, poly2, polyi, 3, 3, &npoints);
+
+     printf("Points of intersected polygon: %d\n", npoints);
+     for(i=0; i<npoints; i++)
+     {
+       printf("Intersected polygon: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+     }
+
+     PolyIntersect(poly2, poly1, polyi, 3, 3, &npoints);
+
+     printf("Points of intersected polygon: %d\n", npoints);
+     for(i=0; i<npoints; i++)
+     {
+       printf("Intersected polygon: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+     }
+
+     PolyMerge(poly1, poly2, polyi, 3, 3, &npoints);
+
+     printf("Points of merged polygon: %d\n", npoints);
+     for(i=0; i<npoints; i++)
+     {
+       printf("Merged polygon: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+     }
+
+     PolyMerge(poly2, poly1, polyi, 3, 3, &npoints);
+
+     printf("Points of merged polygon: %d\n", npoints);
+     for(i=0; i<npoints; i++)
+     {
+       printf("Merged polygon: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+     }
+   }
+
+   printf("-----------------------------\n");
+
+   //intersection and union of two symmetric triangles, horizontal movement
+   for(j=0; j<3; j++)
+   {
+     printf("Move: %d\n", j);
+
+     poly2[0][0] = -2.0+j*1.0;
+     poly2[0][1] = 1.0;
+     poly2[1][0] = -1.0+j*1.0;
+     poly2[1][1] = 0.0;
+     poly2[2][0] = j*1.0;
+     poly2[2][1] = 1.0;
+
+     PolyIntersect(poly1, poly2, polyi, 3, 3, &npoints);
+
+     printf("Points of intersected polygon: %d\n", npoints);
+     for(i=0; i<npoints; i++)
+     {
+       printf("Intersected polygon: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+     }
+
+     PolyIntersect(poly2, poly1, polyi, 3, 3, &npoints);
+
+     printf("Points of intersected polygon: %d\n", npoints);
+     for(i=0; i<npoints; i++)
+     {
+       printf("Intersected polygon: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+     }
+
+     PolyMerge(poly1, poly2, polyi, 3, 3, &npoints);
+
+     printf("Points of merged polygon: %d\n", npoints);
+     for(i=0; i<npoints; i++)
+     {
+       printf("Merged polygon: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+     }
+
+     PolyMerge(poly2, poly1, polyi, 3, 3, &npoints);
+
+     printf("Points of merged polygon: %d\n", npoints);
+     for(i=0; i<npoints; i++)
+     {
+       printf("Merged polygon: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+     }
+   }
+
+   printf("-----------------------------\n");
+
+   //intersection and union of two symmetric triangles, vertical movement
+   for(j=0; j<5; j++)
+   {
+     printf("Move: %d\n", j);
+
+     poly2[0][0] = -1.0;
+     poly2[0][1] = j*0.5;
+     poly2[1][0] = 0.0;
+     poly2[1][1] = -1.0+j*0.5;
+     poly2[2][0] = 1.0;
      poly2[2][1] = j*0.5;
 
      PolyIntersect(poly1, poly2, polyi, 3, 3, &npoints);
@@ -147,6 +243,7 @@ int main (int argc, char *argv[])
    poly1[5][0] = 0.5;
    poly1[5][1] = 0.5;
 
+   //intersection and union between one static hexagon and one moving square, vertical movement
    for(j=0; j<7; j++)
    {
      printf("Move: %d\n", j);
@@ -195,6 +292,7 @@ int main (int argc, char *argv[])
 
    printf("-----------------------------\n");
 
+   //intersection and union between one static hexagon and one moving square, horizontal movement
    for(j=0; j<9; j++)
    {
      printf("Move: %d\n", j);
