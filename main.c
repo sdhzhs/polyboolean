@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include <math.h>
 #include "convex_poly_boolean.h"
 
 int main (int argc, char *argv[])
 {
-   int i, j, npoints;
+   int i, j, k, npoints;
    double poly1[6][3], poly2[4][3], polyi[16][3];
 
    for(i=0; i<3; i++)
@@ -178,6 +179,76 @@ int main (int argc, char *argv[])
      poly2[1][1] = -1.0+j*0.5;
      poly2[2][0] = 1.0;
      poly2[2][1] = j*0.5;
+
+     PolyIntersect(poly1, poly2, polyi, 3, 3, &npoints);
+
+     printf("Points of intersected polygon: %d\n", npoints);
+     for(i=0; i<npoints; i++)
+     {
+       printf("Intersected polygon: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+     }
+
+     PolyIntersect(poly2, poly1, polyi, 3, 3, &npoints);
+
+     printf("Points of intersected polygon: %d\n", npoints);
+     for(i=0; i<npoints; i++)
+     {
+       printf("Intersected polygon: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+     }
+
+     PolyMerge(poly1, poly2, polyi, 3, 3, &npoints);
+
+     printf("Points of merged polygon: %d\n", npoints);
+     for(i=0; i<npoints; i++)
+     {
+       printf("Merged polygon: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+     }
+
+     PolyMerge(poly2, poly1, polyi, 3, 3, &npoints);
+
+     printf("Points of merged polygon: %d\n", npoints);
+     for(i=0; i<npoints; i++)
+     {
+       printf("Merged polygon: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+     }
+   }
+
+   printf("-----------------------------\n");
+
+   //intersection and union of two congruent triangles, horizontal movement, on yoz plane
+   double p0[3] = {-5.0, 0.0, 0.0}, n[3] = {1.0, 0.0, 0.0}, t[3] = {-1.0/sqrt(2.0), 0.0, 1.0/sqrt(2.0)};
+   
+   for(i=0; i<3; i++)
+   {
+     PntShadow(p0, n, t, poly1[i], polyi[i]);
+
+     for(j=0; j<3; j++)
+       poly1[i][j] = polyi[i][j];
+   }
+
+   for(j=0; j<4; j++)
+   {
+     printf("Move: %d\n", j);
+
+     poly2[0][0] = -3.0+j*1.0;
+     poly2[0][1] = 0.0;
+     poly2[1][0] = -1.0+j*1.0;
+     poly2[1][1] = 0.0;
+     poly2[2][0] = -2.0+j*1.0;
+     poly2[2][1] = 1.0;
+
+     for(i=0; i<3; i++)
+     {
+       poly2[i][2] = 0.0;
+     }
+
+     for(i=0; i<3; i++)
+     {
+       PntShadow(p0, n, t, poly2[i], polyi[i]);
+
+       for(k=0; k<3; k++)
+         poly2[i][k] = polyi[i][k];
+     }
 
      PolyIntersect(poly1, poly2, polyi, 3, 3, &npoints);
 
