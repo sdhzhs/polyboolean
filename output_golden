@@ -1,0 +1,1093 @@
+Move: 0
+Points of inner and intersect: 1, 0
+Points of intersected polygon: 1
+Intersected polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Points of inner and intersect: 1, 0
+Points of intersected polygon: 1
+Intersected polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Points of inner and intersect: 1, 0
+Points of merged polygon: 6
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -2.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -3.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Points of inner and intersect: 1, 0
+Points of merged polygon: 6
+Merged polygon: -3.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -2.000000e+00, 1.000000e+00, 0.000000e+00
+Move: 1
+Points of inner and intersect: 0, 3
+Points of intersected polygon: 3
+Intersected polygon: 0.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Points of inner and intersect: 0, 3
+Points of intersected polygon: 3
+Intersected polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 0.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 3
+Points of merged polygon: 6
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: -1.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -2.000000e+00, 0.000000e+00, 0.000000e+00
+Points of inner and intersect: 0, 3
+Points of merged polygon: 6
+Merged polygon: -2.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: -1.000000e+00, 1.000000e+00, 0.000000e+00
+Move: 2
+Points of inner and intersect: 3, 0
+Points of intersected polygon: 3
+Intersected polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Points of inner and intersect: 3, 0
+Points of intersected polygon: 3
+Intersected polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Points of inner and intersect: 3, 0
+Points of merged polygon: 3
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Points of inner and intersect: 3, 0
+Points of merged polygon: 3
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Move: 3
+Points of inner and intersect: 0, 3
+Points of intersected polygon: 3
+Intersected polygon: 0.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 3
+Points of intersected polygon: 3
+Intersected polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: 0.000000e+00, 0.000000e+00, 0.000000e+00
+Points of inner and intersect: 0, 3
+Points of merged polygon: 6
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 2.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Points of inner and intersect: 0, 3
+Points of merged polygon: 6
+Merged polygon: 0.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 2.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+-----------------------------
+Move: 0
+Points of inner and intersect: 0, 2
+Points of intersected polygon: 1
+Intersected polygon: 0.000000e+00, 0.000000e+00, 0.000000e+00
+Points of inner and intersect: 0, 2
+Points of intersected polygon: 1
+Intersected polygon: 0.000000e+00, 0.000000e+00, 0.000000e+00
+Points of inner and intersect: 0, 2
+Points of merged polygon: 7
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Points of inner and intersect: 0, 2
+Points of merged polygon: 7
+Merged polygon: -1.000000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 0.000000e+00, 0.000000e+00
+Move: 1
+Points of inner and intersect: 0, 2
+Points of intersected polygon: 3
+Intersected polygon: 0.000000e+00, 5.000000e-01, 0.000000e+00
+Intersected polygon: -5.000000e-01, 0.000000e+00, 0.000000e+00
+Intersected polygon: 5.000000e-01, 0.000000e+00, 0.000000e+00
+Points of inner and intersect: 1, 2
+Points of intersected polygon: 3
+Intersected polygon: 5.000000e-01, 0.000000e+00, 0.000000e+00
+Intersected polygon: 0.000000e+00, 5.000000e-01, 0.000000e+00
+Intersected polygon: -5.000000e-01, 0.000000e+00, 0.000000e+00
+Points of inner and intersect: 0, 2
+Points of merged polygon: 7
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, 0.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, -5.000000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, -5.000000e-01, 0.000000e+00
+Merged polygon: 5.000000e-01, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Points of inner and intersect: 1, 2
+Points of merged polygon: 7
+Merged polygon: -1.000000e+00, -5.000000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, -5.000000e-01, 0.000000e+00
+Merged polygon: 5.000000e-01, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, 0.000000e+00, 0.000000e+00
+Move: 2
+Points of inner and intersect: 3, 0
+Points of intersected polygon: 3
+Intersected polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Points of inner and intersect: 3, 0
+Points of intersected polygon: 3
+Intersected polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Points of inner and intersect: 3, 0
+Points of merged polygon: 3
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Points of inner and intersect: 3, 0
+Points of merged polygon: 3
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Move: 3
+Points of inner and intersect: 1, 2
+Points of intersected polygon: 3
+Intersected polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Intersected polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 2
+Points of intersected polygon: 3
+Intersected polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Intersected polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 1, 2
+Points of merged polygon: 7
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, 5.000000e-01, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.500000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 5.000000e-01, 0.000000e+00
+Merged polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 2
+Points of merged polygon: 7
+Merged polygon: -1.000000e+00, 5.000000e-01, 0.000000e+00
+Merged polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, 5.000000e-01, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.500000e+00, 0.000000e+00
+Move: 4
+Points of inner and intersect: 0, 2
+Points of intersected polygon: 1
+Intersected polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Points of inner and intersect: 0, 2
+Points of intersected polygon: 1
+Intersected polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Points of inner and intersect: 0, 2
+Points of merged polygon: 7
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 2.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Points of inner and intersect: 0, 2
+Points of merged polygon: 7
+Merged polygon: -1.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 2.000000e+00, 0.000000e+00
+-----------------------------
+Move: 0
+Points of inner and intersect: 2, 0
+Points of intersected polygon: 2
+Intersected polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Points of inner and intersect: 2, 0
+Points of intersected polygon: 2
+Intersected polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Points of inner and intersect: 2, 0
+Points of merged polygon: 4
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -2.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Points of inner and intersect: 2, 0
+Points of merged polygon: 4
+Merged polygon: -2.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Move: 1
+Points of inner and intersect: 0, 6
+Points of intersected polygon: 4
+Intersected polygon: 0.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Intersected polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 6
+Points of intersected polygon: 4
+Intersected polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: 0.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Points of inner and intersect: 0, 6
+Points of merged polygon: 8
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 6
+Points of merged polygon: 8
+Merged polygon: -1.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Move: 2
+Points of inner and intersect: 2, 0
+Points of intersected polygon: 2
+Intersected polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Points of inner and intersect: 2, 0
+Points of intersected polygon: 2
+Intersected polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Intersected polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Points of inner and intersect: 2, 0
+Points of merged polygon: 4
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 2.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Points of inner and intersect: 2, 0
+Points of merged polygon: 4
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 2.000000e+00, 1.000000e+00, 0.000000e+00
+-----------------------------
+Move: 0
+Points of inner and intersect: 2, 0
+Points of intersected polygon: 2
+Intersected polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Points of inner and intersect: 2, 0
+Points of intersected polygon: 2
+Intersected polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Points of inner and intersect: 2, 0
+Points of merged polygon: 4
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Points of inner and intersect: 2, 0
+Points of merged polygon: 4
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, -1.000000e+00, 0.000000e+00
+Move: 1
+Points of inner and intersect: 0, 6
+Points of intersected polygon: 6
+Intersected polygon: -5.000000e-01, 0.000000e+00, 0.000000e+00
+Intersected polygon: 5.000000e-01, 0.000000e+00, 0.000000e+00
+Intersected polygon: 7.500000e-01, 2.500000e-01, 0.000000e+00
+Intersected polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: -7.500000e-01, 2.500000e-01, 0.000000e+00
+Points of inner and intersect: 0, 6
+Points of intersected polygon: 6
+Intersected polygon: -7.500000e-01, 2.500000e-01, 0.000000e+00
+Intersected polygon: -5.000000e-01, 0.000000e+00, 0.000000e+00
+Intersected polygon: 5.000000e-01, 0.000000e+00, 0.000000e+00
+Intersected polygon: 7.500000e-01, 2.500000e-01, 0.000000e+00
+Intersected polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 6
+Points of merged polygon: 12
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, 0.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, -5.000000e-01, 0.000000e+00
+Merged polygon: 5.000000e-01, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 7.500000e-01, 2.500000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, 5.000000e-01, 0.000000e+00
+Merged polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: -1.000000e+00, 5.000000e-01, 0.000000e+00
+Merged polygon: -7.500000e-01, 2.500000e-01, 0.000000e+00
+Points of inner and intersect: 0, 6
+Points of merged polygon: 12
+Merged polygon: -1.000000e+00, 5.000000e-01, 0.000000e+00
+Merged polygon: -7.500000e-01, 2.500000e-01, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, 0.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, -5.000000e-01, 0.000000e+00
+Merged polygon: 5.000000e-01, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 7.500000e-01, 2.500000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, 5.000000e-01, 0.000000e+00
+Merged polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Move: 2
+Points of inner and intersect: 0, 6
+Points of intersected polygon: 4
+Intersected polygon: 0.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Intersected polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 6
+Points of intersected polygon: 4
+Intersected polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: 0.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Points of inner and intersect: 0, 6
+Points of merged polygon: 8
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 6
+Points of merged polygon: 8
+Merged polygon: -1.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Move: 3
+Points of inner and intersect: 1, 2
+Points of intersected polygon: 4
+Intersected polygon: 0.000000e+00, 5.000000e-01, 0.000000e+00
+Intersected polygon: 2.500000e-01, 7.500000e-01, 0.000000e+00
+Intersected polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Intersected polygon: -2.500000e-01, 7.500000e-01, 0.000000e+00
+Points of inner and intersect: 1, 2
+Points of intersected polygon: 4
+Intersected polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Intersected polygon: -2.500000e-01, 7.500000e-01, 0.000000e+00
+Intersected polygon: 0.000000e+00, 5.000000e-01, 0.000000e+00
+Intersected polygon: 2.500000e-01, 7.500000e-01, 0.000000e+00
+Points of inner and intersect: 1, 2
+Points of merged polygon: 6
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 2.500000e-01, 7.500000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, 1.500000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 1.500000e+00, 0.000000e+00
+Merged polygon: -2.500000e-01, 7.500000e-01, 0.000000e+00
+Points of inner and intersect: 1, 2
+Points of merged polygon: 6
+Merged polygon: -1.000000e+00, 1.500000e+00, 0.000000e+00
+Merged polygon: -2.500000e-01, 7.500000e-01, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 2.500000e-01, 7.500000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, 1.500000e+00, 0.000000e+00
+Move: 4
+Points of inner and intersect: 1, 0
+Points of intersected polygon: 1
+Intersected polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Points of inner and intersect: 1, 0
+Points of intersected polygon: 1
+Intersected polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Points of inner and intersect: 1, 0
+Points of merged polygon: 6
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 2.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 2.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Points of inner and intersect: 1, 0
+Points of merged polygon: 6
+Merged polygon: -1.000000e+00, 2.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 2.000000e+00, 0.000000e+00
+-----------------------------
+Move: 0
+Points of inner and intersect: 1, 0
+Points of intersected polygon: 1
+Intersected polygon: -5.000000e+00, 0.000000e+00, 4.000000e+00
+Points of inner and intersect: 1, 0
+Points of intersected polygon: 1
+Intersected polygon: -5.000000e+00, 0.000000e+00, 4.000000e+00
+Points of inner and intersect: 1, 0
+Points of merged polygon: 6
+Merged polygon: -5.000000e+00, 0.000000e+00, 4.000000e+00
+Merged polygon: -5.000000e+00, 1.000000e+00, 3.000000e+00
+Merged polygon: -5.000000e+00, 0.000000e+00, 2.000000e+00
+Merged polygon: -5.000000e+00, 0.000000e+00, 4.000000e+00
+Merged polygon: -5.000000e+00, 0.000000e+00, 6.000000e+00
+Merged polygon: -5.000000e+00, 1.000000e+00, 5.000000e+00
+Points of inner and intersect: 1, 0
+Points of merged polygon: 6
+Merged polygon: -5.000000e+00, 0.000000e+00, 2.000000e+00
+Merged polygon: -5.000000e+00, 0.000000e+00, 4.000000e+00
+Merged polygon: -5.000000e+00, 0.000000e+00, 6.000000e+00
+Merged polygon: -5.000000e+00, 1.000000e+00, 5.000000e+00
+Merged polygon: -5.000000e+00, 0.000000e+00, 4.000000e+00
+Merged polygon: -5.000000e+00, 1.000000e+00, 3.000000e+00
+Move: 1
+Points of inner and intersect: 0, 3
+Points of intersected polygon: 3
+Intersected polygon: -5.000000e+00, 0.000000e+00, 5.000000e+00
+Intersected polygon: -5.000000e+00, 5.000000e-01, 4.500000e+00
+Intersected polygon: -5.000000e+00, 0.000000e+00, 4.000000e+00
+Points of inner and intersect: 0, 3
+Points of intersected polygon: 3
+Intersected polygon: -5.000000e+00, 0.000000e+00, 4.000000e+00
+Intersected polygon: -5.000000e+00, 0.000000e+00, 5.000000e+00
+Intersected polygon: -5.000000e+00, 5.000000e-01, 4.500000e+00
+Points of inner and intersect: 0, 3
+Points of merged polygon: 6
+Merged polygon: -5.000000e+00, 0.000000e+00, 4.000000e+00
+Merged polygon: -5.000000e+00, 0.000000e+00, 6.000000e+00
+Merged polygon: -5.000000e+00, 1.000000e+00, 5.000000e+00
+Merged polygon: -5.000000e+00, 5.000000e-01, 4.500000e+00
+Merged polygon: -5.000000e+00, 1.000000e+00, 4.000000e+00
+Merged polygon: -5.000000e+00, 0.000000e+00, 3.000000e+00
+Points of inner and intersect: 0, 3
+Points of merged polygon: 6
+Merged polygon: -5.000000e+00, 0.000000e+00, 3.000000e+00
+Merged polygon: -5.000000e+00, 0.000000e+00, 5.000000e+00
+Merged polygon: -5.000000e+00, 0.000000e+00, 6.000000e+00
+Merged polygon: -5.000000e+00, 1.000000e+00, 5.000000e+00
+Merged polygon: -5.000000e+00, 5.000000e-01, 4.500000e+00
+Merged polygon: -5.000000e+00, 1.000000e+00, 4.000000e+00
+Move: 2
+Points of inner and intersect: 3, 0
+Points of intersected polygon: 3
+Intersected polygon: -5.000000e+00, 0.000000e+00, 4.000000e+00
+Intersected polygon: -5.000000e+00, 0.000000e+00, 6.000000e+00
+Intersected polygon: -5.000000e+00, 1.000000e+00, 5.000000e+00
+Points of inner and intersect: 3, 0
+Points of intersected polygon: 3
+Intersected polygon: -5.000000e+00, 0.000000e+00, 4.000000e+00
+Intersected polygon: -5.000000e+00, 0.000000e+00, 6.000000e+00
+Intersected polygon: -5.000000e+00, 1.000000e+00, 5.000000e+00
+Points of inner and intersect: 3, 0
+Points of merged polygon: 3
+Merged polygon: -5.000000e+00, 0.000000e+00, 4.000000e+00
+Merged polygon: -5.000000e+00, 0.000000e+00, 6.000000e+00
+Merged polygon: -5.000000e+00, 1.000000e+00, 5.000000e+00
+Points of inner and intersect: 3, 0
+Points of merged polygon: 3
+Merged polygon: -5.000000e+00, 0.000000e+00, 4.000000e+00
+Merged polygon: -5.000000e+00, 0.000000e+00, 6.000000e+00
+Merged polygon: -5.000000e+00, 1.000000e+00, 5.000000e+00
+Move: 3
+Points of inner and intersect: 0, 3
+Points of intersected polygon: 3
+Intersected polygon: -5.000000e+00, 0.000000e+00, 5.000000e+00
+Intersected polygon: -5.000000e+00, 4.440892e-16, 6.000000e+00
+Intersected polygon: -5.000000e+00, 5.000000e-01, 5.500000e+00
+Points of inner and intersect: 0, 3
+Points of intersected polygon: 3
+Intersected polygon: -5.000000e+00, 0.000000e+00, 6.000000e+00
+Intersected polygon: -5.000000e+00, 5.000000e-01, 5.500000e+00
+Intersected polygon: -5.000000e+00, 0.000000e+00, 5.000000e+00
+Points of inner and intersect: 0, 3
+Points of merged polygon: 6
+Merged polygon: -5.000000e+00, 0.000000e+00, 4.000000e+00
+Merged polygon: -5.000000e+00, 4.440892e-16, 6.000000e+00
+Merged polygon: -5.000000e+00, 0.000000e+00, 7.000000e+00
+Merged polygon: -5.000000e+00, 1.000000e+00, 6.000000e+00
+Merged polygon: -5.000000e+00, 5.000000e-01, 5.500000e+00
+Merged polygon: -5.000000e+00, 1.000000e+00, 5.000000e+00
+Points of inner and intersect: 0, 3
+Points of merged polygon: 6
+Merged polygon: -5.000000e+00, 0.000000e+00, 5.000000e+00
+Merged polygon: -5.000000e+00, 0.000000e+00, 7.000000e+00
+Merged polygon: -5.000000e+00, 1.000000e+00, 6.000000e+00
+Merged polygon: -5.000000e+00, 5.000000e-01, 5.500000e+00
+Merged polygon: -5.000000e+00, 1.000000e+00, 5.000000e+00
+Merged polygon: -5.000000e+00, 0.000000e+00, 4.000000e+00
+-----------------------------
+Move: 0
+Points of inner and intersect: 0, 2
+Points of intersected polygon: 2
+Intersected polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 2
+Points of intersected polygon: 2
+Intersected polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 2
+Points of merged polygon: 10
+Merged polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: -1.000000e+00, -5.000000e-01, 0.000000e+00
+Merged polygon: -1.000000e+00, -2.500000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, -2.500000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, -5.000000e-01, 0.000000e+00
+Merged polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 2
+Points of merged polygon: 10
+Merged polygon: -1.000000e+00, -5.000000e-01, 0.000000e+00
+Merged polygon: -1.000000e+00, -2.500000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, -2.500000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, -5.000000e-01, 0.000000e+00
+Merged polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Move: 1
+Points of inner and intersect: 4, 0
+Points of intersected polygon: 4
+Intersected polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Points of inner and intersect: 2, 0
+Points of intersected polygon: 4
+Intersected polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Points of inner and intersect: 4, 0
+Points of merged polygon: 6
+Merged polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, -2.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, -2.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 2, 0
+Points of merged polygon: 6
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, -2.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, -2.000000e+00, 0.000000e+00
+Move: 2
+Points of inner and intersect: 2, 6
+Points of intersected polygon: 6
+Intersected polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 6
+Points of intersected polygon: 6
+Intersected polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 2, 6
+Points of merged polygon: 8
+Merged polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: -1.000000e+00, 5.000000e-01, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, -1.500000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, -1.500000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 5.000000e-01, 0.000000e+00
+Merged polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 6
+Points of merged polygon: 8
+Merged polygon: -1.000000e+00, 5.000000e-01, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, -1.500000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, -1.500000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 5.000000e-01, 0.000000e+00
+Merged polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Move: 3
+Points of inner and intersect: 4, 4
+Points of intersected polygon: 6
+Intersected polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 4
+Points of intersected polygon: 6
+Intersected polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Points of inner and intersect: 4, 4
+Points of merged polygon: 6
+Merged polygon: 1.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Points of inner and intersect: 0, 4
+Points of merged polygon: 6
+Merged polygon: -1.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 1.000000e+00, 0.000000e+00
+Move: 4
+Points of inner and intersect: 2, 6
+Points of intersected polygon: 6
+Intersected polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 6
+Points of intersected polygon: 6
+Intersected polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Points of inner and intersect: 2, 6
+Points of merged polygon: 8
+Merged polygon: 1.000000e+00, 1.500000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 1.500000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, -5.000000e-01, 0.000000e+00
+Merged polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, -5.000000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Points of inner and intersect: 0, 6
+Points of merged polygon: 8
+Merged polygon: -1.000000e+00, 1.500000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, -5.000000e-01, 0.000000e+00
+Merged polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, -5.000000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 1.500000e+00, 0.000000e+00
+Move: 5
+Points of inner and intersect: 4, 0
+Points of intersected polygon: 4
+Intersected polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 2, 0
+Points of intersected polygon: 4
+Intersected polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Points of inner and intersect: 4, 0
+Points of merged polygon: 6
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 2.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 2.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Points of inner and intersect: 2, 0
+Points of merged polygon: 6
+Merged polygon: -1.000000e+00, 2.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 2.000000e+00, 0.000000e+00
+Move: 6
+Points of inner and intersect: 0, 2
+Points of intersected polygon: 2
+Intersected polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 2
+Points of intersected polygon: 2
+Intersected polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 2
+Points of merged polygon: 10
+Merged polygon: 1.000000e+00, 5.000000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, 2.500000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 2.500000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 5.000000e-01, 0.000000e+00
+Merged polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 2
+Points of merged polygon: 10
+Merged polygon: -1.000000e+00, 2.500000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 5.000000e-01, 0.000000e+00
+Merged polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, 5.000000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, 2.500000e+00, 0.000000e+00
+-----------------------------
+Move: 0
+Points of inner and intersect: 0, 2
+Points of intersected polygon: 1
+Intersected polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Points of inner and intersect: 0, 2
+Points of intersected polygon: 1
+Intersected polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Points of inner and intersect: 0, 2
+Points of merged polygon: 11
+Merged polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -3.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -3.000000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 2
+Points of merged polygon: 11
+Merged polygon: -3.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -3.000000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 1.000000e+00, 0.000000e+00
+Move: 1
+Points of inner and intersect: 1, 4
+Points of intersected polygon: 3
+Intersected polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 4
+Points of intersected polygon: 3
+Intersected polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 1, 4
+Points of merged polygon: 9
+Merged polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: -5.000000e-01, 1.000000e+00, 0.000000e+00
+Merged polygon: -2.500000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -2.500000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, -1.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 4
+Points of merged polygon: 9
+Merged polygon: -2.500000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -2.500000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, -1.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: -5.000000e-01, 1.000000e+00, 0.000000e+00
+Move: 2
+Points of inner and intersect: 3, 2
+Points of intersected polygon: 5
+Intersected polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 0.000000e+00, -5.000000e-01, 0.000000e+00
+Intersected polygon: 0.000000e+00, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 2
+Points of intersected polygon: 5
+Intersected polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 0.000000e+00, -5.000000e-01, 0.000000e+00
+Intersected polygon: 0.000000e+00, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 3, 2
+Points of merged polygon: 9
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -2.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -2.000000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, -5.000000e-01, 0.000000e+00
+Merged polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: 0.000000e+00, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 2
+Points of merged polygon: 9
+Merged polygon: -2.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -2.000000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, -5.000000e-01, 0.000000e+00
+Merged polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: 0.000000e+00, 5.000000e-01, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Move: 3
+Points of inner and intersect: 3, 4
+Points of intersected polygon: 5
+Intersected polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 4
+Points of intersected polygon: 5
+Intersected polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Points of inner and intersect: 3, 4
+Points of merged polygon: 7
+Merged polygon: 5.000000e-01, 1.000000e+00, 0.000000e+00
+Merged polygon: -1.500000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -1.500000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: 5.000000e-01, -1.000000e+00, 0.000000e+00
+Merged polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 4
+Points of merged polygon: 7
+Merged polygon: -1.500000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -1.500000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: 5.000000e-01, -1.000000e+00, 0.000000e+00
+Merged polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: 5.000000e-01, 1.000000e+00, 0.000000e+00
+Move: 4
+Points of inner and intersect: 4, 4
+Points of intersected polygon: 6
+Intersected polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 4
+Points of intersected polygon: 6
+Intersected polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Points of inner and intersect: 4, 4
+Points of merged polygon: 6
+Merged polygon: 1.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Points of inner and intersect: 0, 4
+Points of merged polygon: 6
+Merged polygon: -1.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -1.000000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 1.000000e+00, 0.000000e+00
+Move: 5
+Points of inner and intersect: 3, 4
+Points of intersected polygon: 5
+Intersected polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 4
+Points of intersected polygon: 5
+Intersected polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Points of inner and intersect: 3, 4
+Points of merged polygon: 7
+Merged polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: -5.000000e-01, -1.000000e+00, 0.000000e+00
+Merged polygon: 1.500000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: 1.500000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, 1.000000e+00, 0.000000e+00
+Points of inner and intersect: 0, 4
+Points of merged polygon: 7
+Merged polygon: -5.000000e-01, 1.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: -5.000000e-01, -1.000000e+00, 0.000000e+00
+Merged polygon: 1.500000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: 1.500000e+00, 1.000000e+00, 0.000000e+00
+Move: 6
+Points of inner and intersect: 3, 2
+Points of intersected polygon: 5
+Intersected polygon: 0.000000e+00, -5.000000e-01, 0.000000e+00
+Intersected polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: 0.000000e+00, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 2
+Points of intersected polygon: 5
+Intersected polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Intersected polygon: 0.000000e+00, 5.000000e-01, 0.000000e+00
+Intersected polygon: 0.000000e+00, -5.000000e-01, 0.000000e+00
+Points of inner and intersect: 3, 2
+Points of merged polygon: 9
+Merged polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 0.000000e+00, -5.000000e-01, 0.000000e+00
+Merged polygon: 0.000000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: 2.000000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: 2.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 2
+Points of merged polygon: 9
+Merged polygon: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: 0.000000e+00, 5.000000e-01, 0.000000e+00
+Merged polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 0.000000e+00, -5.000000e-01, 0.000000e+00
+Merged polygon: 0.000000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: 2.000000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: 2.000000e+00, 1.000000e+00, 0.000000e+00
+Move: 7
+Points of inner and intersect: 1, 4
+Points of intersected polygon: 3
+Intersected polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 4
+Points of intersected polygon: 3
+Intersected polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Intersected polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Intersected polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 1, 4
+Points of merged polygon: 9
+Merged polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 5.000000e-01, -1.000000e+00, 0.000000e+00
+Merged polygon: 2.500000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: 2.500000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: 5.000000e-01, 1.000000e+00, 0.000000e+00
+Merged polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 4
+Points of merged polygon: 9
+Merged polygon: 5.000000e-01, 1.000000e+00, 0.000000e+00
+Merged polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 5.000000e-01, -1.000000e+00, 0.000000e+00
+Merged polygon: 2.500000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: 2.500000e+00, 1.000000e+00, 0.000000e+00
+Move: 8
+Points of inner and intersect: 0, 2
+Points of intersected polygon: 1
+Intersected polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Points of inner and intersect: 0, 2
+Points of intersected polygon: 1
+Intersected polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Points of inner and intersect: 0, 2
+Points of merged polygon: 11
+Merged polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: 3.000000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: 3.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 2
+Points of merged polygon: 11
+Merged polygon: 1.000000e+00, 1.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: -5.000000e-01, 5.000000e-01, 0.000000e+00
+Merged polygon: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: -5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 5.000000e-01, -5.000000e-01, 0.000000e+00
+Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Merged polygon: 1.000000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: 3.000000e+00, -1.000000e+00, 0.000000e+00
+Merged polygon: 3.000000e+00, 1.000000e+00, 0.000000e+00
