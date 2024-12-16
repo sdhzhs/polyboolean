@@ -114,7 +114,7 @@ int Isinner(real p[][3], real p0[3], int nps) //predicate a point is inside a 3D
   return id;
 }
 
-int InterSect(real* p0, real* p1, real* p2, real* p3, real* pi) //predicate intersecting status of two segments, excluding collinear and common point itersections
+int InterSect(real* p0, real* p1, real* p2, real* p3, real* pi) //predicate intersecting status of two segments, excluding collinear and common point intersections
 {
   int j, ndims;
   real ip, tp, sp, tol, epsi1, epsi2;
@@ -204,7 +204,7 @@ real PolyArea(real p[][3], int nps) //calculate area of a 3D polygon
   return A;
 }
 
-void PolyProp(real p[][3], real c[3], real n[3], int nps) //calculate normal and center of a 3D polygon
+void PolyProp(real p[][3], real c[3], real n[3], int nps) //calculate normal vector and geometric center of a 3D polygon
 {
   int i, j;
   real dn;
