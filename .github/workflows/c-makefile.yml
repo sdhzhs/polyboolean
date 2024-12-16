@@ -16,6 +16,6 @@ jobs:
     - name: make
       run: make
     - name: run
-      run: bin/polyop
+      run: bin/polyop > output
     - name: check
       run: diff output output_golden
