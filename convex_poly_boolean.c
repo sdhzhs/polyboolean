@@ -3,6 +3,8 @@
 #include "convex_poly_boolean.h"
 
 #define ND_ND 3
+#define MAX_INTERSECTIONS 4
+#define TOLERANCE 1e-6
 
 //basic geometry calculation
 real DotProduct(real* v1, real* v2, int ndims) //dot product of two n-dimentional vectors
@@ -79,7 +81,12 @@ int Isinner(real p[][3], real p0[3], int nps) //predicate a point is inside a 3D
   real ip, tol, epsi, epsi0;
   real v0[3], v1[3], v2[3], v3[3];
 
-  tol = 1e-6; //geometric tolerence
+  tol = TOLERANCE; //geometric tolerence
+
+  for(j=0; j<3; j++)
+    v0[j] = 0.0;
+
+  epsi0 = 0.0;
 
   for(i=0; i<nps-1; i++)
   {
@@ -121,7 +128,7 @@ int InterSect(real* p0, real* p1, real* p2, real* p3, real* pi) //predicate inte
   real v0[3], v1[3], v2[3], v3[3], v4[3];
 
   ndims = 3;
-  tol = 1e-6; //geometric tolerence
+  tol = TOLERANCE; //geometric tolerence
 
   for(j=0; j<ndims; j++)
   {
@@ -315,7 +322,7 @@ bool OnPolyNodes(real p[][3], real p0[3], int* nodeid, int nps) //predicate a po
   real tp, tol, v0[3];
   bool isOnNodes = false;
 
-  tol = 1e-6;
+  tol = TOLERANCE;
 
   for(i=0; i<nps; i++)
   {
@@ -338,13 +345,19 @@ bool OnPolyNodes(real p[][3], real p0[3], int* nodeid, int nps) //predicate a po
 //boolean operations between two convex polygons
 void PolyIntersect(real poly1[][3], real poly2[][3], real polyi[][3], int nps1, int nps2, int* npsi) //intersect operation of two 3D convex polygons
 {
-  int i, j, n, l, inext, iprev, ninners, ninsecs, npoints, innerflag, insecflag, ibinsec[4];
+  int i, j, n, l, inext, iprev = 0, ninners, ninsecs, npoints, innerflag, insecflag, ibinsec[4];
   int innerflags[nps1], insecflags[nps1], ibinsecs[2*nps1];
   real tp, sp, tol;
   real pa[3], pb[3], v0[3], v1[3];
   real pinsec[4][3], pinsecs[2*nps1][3], polygon[2*nps1+nps2][3];
 
-  tol = 1e-6;
+  if (!poly1 || !poly2 || !polyi || !npsi) {
+      printf("Unallocated memory for input or ouput polygons\n");
+
+      return;
+  }
+
+  tol = TOLERANCE;
 
   ninners = 0;
   ninsecs = 0;
@@ -381,14 +394,14 @@ void PolyIntersect(real poly1[][3], real poly2[][3], real polyi[][3], int nps1, 
         l++;
         ninsecs++;
       }
-      if(l == 4) break;
+      if(l == MAX_INTERSECTIONS) break;
     }
     if(l < 2)
       insecflags[n] = l;
     else
       insecflags[n] = 2;
 
-    if(l == 3)
+    if(l == MAX_INTERSECTIONS-1)
     {
       for(j=0; j<3; j++)
       {
@@ -402,7 +415,7 @@ void PolyIntersect(real poly1[][3], real poly2[][3], real polyi[][3], int nps1, 
         ibinsec[1] = ibinsec[2];
       }
     }
-    else if(l == 4)
+    else if(l == MAX_INTERSECTIONS)
     {
       for(j=0; j<3; j++)
         pinsec[1][j] = pinsec[2][j];
@@ -600,13 +613,19 @@ void PolyIntersect(real poly1[][3], real poly2[][3], real polyi[][3], int nps1, 
 
 void PolyMerge(real poly1[][3], real poly2[][3], real polym[][3], int nps1, int nps2, int* npsm) //union operation of two 3D convex polygons
 {
-  int i, j, n, l, inext, iprev, ninners, ninsecs, npoints, innerflag, insecflag, ibinsec[4];
+  int i, j, n, l, inext, iprev = 0, ninners, ninsecs, npoints, innerflag, insecflag, ibinsec[4];
   int innerflags[nps1], insecflags[nps1], ibinsecs[2*nps1];
   real tp, sp, tol;
   real pa[3], pb[3], v0[3], v1[3], pinsec[4][3];
   real pinsecs[2*nps1][3], polygon[3*nps1+nps2][3];
 
-  tol = 1e-6;
+  if (!poly1 || !poly2 || !polym || !npsm) {
+      printf("Unallocated memory for input or ouput polygons\n");
+
+      return;
+  }
+
+  tol = TOLERANCE;
 
   ninners = 0;
   ninsecs = 0;
@@ -643,14 +662,14 @@ void PolyMerge(real poly1[][3], real poly2[][3], real polym[][3], int nps1, int 
         l++;
         ninsecs++;
       }
-      if(l == 4) break;
+      if(l == MAX_INTERSECTIONS) break;
     }
     if(l < 2)
       insecflags[n] = l;
     else
       insecflags[n] = 2;
 
-    if(l == 3)
+    if(l == MAX_INTERSECTIONS-1)
     {
       for(j=0; j<3; j++)
       {
@@ -664,7 +683,7 @@ void PolyMerge(real poly1[][3], real poly2[][3], real polym[][3], int nps1, int 
         ibinsec[1] = ibinsec[2];
       }
     }
-    else if(l == 4)
+    else if(l == MAX_INTERSECTIONS)
     {
       for(j=0; j<3; j++)
         pinsec[1][j] = pinsec[2][j];
@@ -908,7 +927,7 @@ bool EraseSamePointsInPoly(real poly[][ND_ND], real polyn[][ND_ND], int nps, int
   real tol, dis;
   real v[ND_ND];
 
-  tol = 1e-6;
+  tol = TOLERANCE;
   
   *npsn = 0;
   hasSamePoints = false;
