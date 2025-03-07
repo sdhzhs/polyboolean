@@ -341,7 +341,7 @@ void PolySlice(int slicebegin, int slicend, int* curid, int nps, real poly[][3],
   }
 }
 
-void PolyBound(real poly[][3], real boundbox[2][3], int nps)
+void PolyBound(real poly[][3], real boundbox[2][3], int nps) //get a 3D boundary box of a 3D polygon
 {
   for(int j=0; j<3; j++)
   {
@@ -383,7 +383,7 @@ bool OnPolyNodes(real p[][3], real p0[3], int* nodeid, int nps) //predicate a po
   return isOnNodes;
 }
 
-bool IsAxisIntersect(real axis1[2], real axis2[2])
+bool IsAxisIntersect(real axis1[2], real axis2[2]) //check whether two ranges on 1D axis are intersected
 {
   if(axis1[0] > axis2[1] || axis1[1] < axis2[0])
   {
@@ -393,7 +393,7 @@ bool IsAxisIntersect(real axis1[2], real axis2[2])
   return true;
 }
 
-bool IsBBoxIntersect(real boundbox1[2][3], real boundbox2[2][3])
+bool IsBBoxIntersect(real boundbox1[2][3], real boundbox2[2][3]) //check whether two 3D boundary boxes are intersected
 {
   bool IsInsec = true;
   real axis1[2], axis2[2];
