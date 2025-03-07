@@ -1,10 +1,37 @@
 #include <stdio.h>
 #include <math.h>
+#include <float.h>
 #include "convex_poly_boolean.h"
 
 #define ND_ND 3
 #define MAX_INTERSECTIONS 4
 #define TOLERANCE 1e-6
+
+//comparison function of float pointing number based on tolerence
+inline int FltGT(real a, real b)
+{
+  return a-b > TOLERANCE;
+}
+
+inline int FltGE(real a, real b)
+{
+  return a-b >= -TOLERANCE;
+}
+
+inline int FltLT(real a, real b)
+{
+  return a-b < -TOLERANCE;
+}
+
+inline int FltLE(real a, real b)
+{
+  return a-b <= TOLERANCE;
+}
+
+inline int FltEQ(real a, real b)
+{
+  return fabs(a-b) <= TOLERANCE;
+}
 
 //basic geometry calculation
 real DotProduct(real* v1, real* v2, int ndims) //dot product of two n-dimentional vectors
@@ -45,14 +72,12 @@ real PntProject(real c[3], real n[3], real p[3], real pp[3])  //normal projectio
 int PntShadow(real c[3], real n[3], real t[3], real p[3], real ps[3]) //ray projection of one point on one plane
 {
   int j;
-  real tp, tol;
+  real tp;
   real v[3];
-
-  tol = 1e-15;
 
   tp = DotProduct(n,t,3);
 
-  if(fabs(tp)<tol)
+  if(FltEQ(tp, 0.0))
   {
     for(j=0; j<3; j++)
     {
@@ -316,13 +341,29 @@ void PolySlice(int slicebegin, int slicend, int* curid, int nps, real poly[][3],
   }
 }
 
+void PolyBound(real poly[][3], real boundbox[2][3], int nps)
+{
+  for(int j=0; j<3; j++)
+  {
+    boundbox[0][j] = DBL_MAX;
+    boundbox[1][j] = -DBL_MAX;
+  }
+
+  for(int i=0; i<nps; i++)
+  {
+    for(int j=0; j<3; j++)
+    {
+      if(poly[i][j]<boundbox[0][j]) boundbox[0][j] = poly[i][j];
+      if(poly[i][j]>boundbox[1][j]) boundbox[1][j] = poly[i][j];
+    }
+  }
+}
+
 bool OnPolyNodes(real p[][3], real p0[3], int* nodeid, int nps) //predicate a point is on the vertices of a 3D polygon, get the index if on
 {
   int i, j;
-  real tp, tol, v0[3];
+  real tp, v0[3];
   bool isOnNodes = false;
-
-  tol = TOLERANCE;
 
   for(i=0; i<nps; i++)
   {
@@ -331,7 +372,7 @@ bool OnPolyNodes(real p[][3], real p0[3], int* nodeid, int nps) //predicate a po
       v0[j] = p0[j] - p[i][j];
     }
     tp = sqrt(DotProduct(v0,v0,3));
-    if(tp < tol)
+    if(FltEQ(tp, 0.0))
     {
       isOnNodes = true;
       *nodeid = i;
@@ -342,22 +383,57 @@ bool OnPolyNodes(real p[][3], real p0[3], int* nodeid, int nps) //predicate a po
   return isOnNodes;
 }
 
+bool IsAxisIntersect(real axis1[2], real axis2[2])
+{
+  if(axis1[0] > axis2[1] || axis1[1] < axis2[0])
+  {
+    return false;
+  }
+  
+  return true;
+}
+
+bool IsBBoxIntersect(real boundbox1[2][3], real boundbox2[2][3])
+{
+  bool IsInsec = true;
+  real axis1[2], axis2[2];
+
+  for(int j=0; j<3; j++)
+  {
+    axis1[0] = boundbox1[0][j];
+    axis1[1] = boundbox1[1][j];
+    axis2[0] = boundbox2[0][j];
+    axis2[1] = boundbox2[1][j];
+
+    IsInsec = IsInsec && IsAxisIntersect(axis1, axis2);
+  }
+
+  return IsInsec;
+}
+
 //boolean operations between two convex polygons
 void PolyIntersect(real poly1[][3], real poly2[][3], real polyi[][3], int nps1, int nps2, int* npsi) //intersect operation of two 3D convex polygons
 {
   int i, j, n, l, inext, iprev = 0, ninners, ninsecs, npoints, innerflag, insecflag, ibinsec[4];
   int innerflags[nps1], insecflags[nps1], ibinsecs[2*nps1];
-  real tp, sp, tol;
-  real pa[3], pb[3], v0[3], v1[3];
+  real tp, sp;
+  real pa[3], pb[3], v0[3], v1[3], boundbox1[2][3], boundbox2[2][3];
   real pinsec[4][3], pinsecs[2*nps1][3], polygon[2*nps1+nps2][3];
 
-  if (!poly1 || !poly2 || !polyi || !npsi) {
+  if (!poly1 || !poly2 || !polyi || !npsi)
+  {
       printf("Unallocated memory for input or ouput polygons\n");
 
       return;
   }
 
-  tol = TOLERANCE;
+  PolyBound(poly1, boundbox1, nps1);
+  PolyBound(poly2, boundbox2, nps2);
+  if (!IsBBoxIntersect(boundbox1, boundbox2))
+  {
+    (*npsi) = 0;
+    return;
+  }
 
   ninners = 0;
   ninsecs = 0;
@@ -408,7 +484,7 @@ void PolyIntersect(real poly1[][3], real poly2[][3], real polyi[][3], int nps1, 
         v0[j] = pinsec[0][j] - pinsec[1][j];
       }
       tp = sqrt(DotProduct(v0,v0,3));
-      if(tp < tol)
+      if(FltEQ(tp, 0.0))
       {
         for(j=0; j<3; j++)
           pinsec[1][j] = pinsec[2][j];
@@ -500,7 +576,7 @@ void PolyIntersect(real poly1[][3], real poly2[][3], real polyi[][3], int nps1, 
           }
           tp = sqrt(DotProduct(v0,v0,3));
 
-          if(tp > tol) PolySlice(ibinsecs[2*n+1], ibinsecs[2*n], &npoints, nps2, poly2, polygon, false, false);
+          if(FltGT(tp, 0.0)) PolySlice(ibinsecs[2*n+1], ibinsecs[2*n], &npoints, nps2, poly2, polygon, false, false);
         }
       }
 
@@ -615,17 +691,31 @@ void PolyMerge(real poly1[][3], real poly2[][3], real polym[][3], int nps1, int 
 {
   int i, j, n, l, inext, iprev = 0, ninners, ninsecs, npoints, innerflag, insecflag, ibinsec[4];
   int innerflags[nps1], insecflags[nps1], ibinsecs[2*nps1];
-  real tp, sp, tol;
-  real pa[3], pb[3], v0[3], v1[3], pinsec[4][3];
+  real tp, sp;
+  real pa[3], pb[3], v0[3], v1[3], pinsec[4][3], boundbox1[2][3], boundbox2[2][3];
   real pinsecs[2*nps1][3], polygon[3*nps1+nps2][3];
 
-  if (!poly1 || !poly2 || !polym || !npsm) {
+  if (!poly1 || !poly2 || !polym || !npsm)
+  {
       printf("Unallocated memory for input or ouput polygons\n");
 
       return;
   }
 
-  tol = TOLERANCE;
+  PolyBound(poly1, boundbox1, nps1);
+  PolyBound(poly2, boundbox2, nps2);
+  if (!IsBBoxIntersect(boundbox1, boundbox2))
+  {
+    (*npsm) = nps1;
+    for(n=0; n<nps1; n++)
+    {
+      for(j=0; j<3; j++)
+      {
+        polym[n][j] = poly1[n][j];
+      }
+    }
+    return;
+  }
 
   ninners = 0;
   ninsecs = 0;
@@ -676,7 +766,7 @@ void PolyMerge(real poly1[][3], real poly2[][3], real polym[][3], int nps1, int 
         v0[j] = pinsec[0][j] - pinsec[1][j];
       }
       tp = sqrt(DotProduct(v0,v0,3));
-      if(tp < tol)
+      if(FltEQ(tp, 0.0))
       {
         for(j=0; j<3; j++)
           pinsec[1][j] = pinsec[2][j];
@@ -771,7 +861,7 @@ void PolyMerge(real poly1[][3], real poly2[][3], real polym[][3], int nps1, int 
         }
         tp = sqrt(DotProduct(v0,v0,3));
 
-        if(tp < tol) PolySlice(ibinsecs[2*iprev], ibinsecs[2*n], &npoints, nps2, poly2, polygon, false, true);
+        if(FltEQ(tp, 0.0)) PolySlice(ibinsecs[2*iprev], ibinsecs[2*n], &npoints, nps2, poly2, polygon, false, true);
       }
 
       for(j=0; j<3; j++)
@@ -788,7 +878,7 @@ void PolyMerge(real poly1[][3], real poly2[][3], real polym[][3], int nps1, int 
         }
         tp = sqrt(DotProduct(v0,v0,3));
 
-        if(tp < tol)
+        if(FltEQ(tp, 0.0))
         {
           for(j=0; j<3; j++)
           {
@@ -812,7 +902,7 @@ void PolyMerge(real poly1[][3], real poly2[][3], real polym[][3], int nps1, int 
         }
         tp = sqrt(DotProduct(v0,v0,3));
 
-        if(tp > tol)
+        if(FltGT(tp, 0.0))
         {
           PolySlice(ibinsecs[2*n], ibinsecs[2*n+1], &npoints, nps2, poly2, polygon, false, false);
         }
@@ -924,11 +1014,9 @@ bool EraseSamePointsInPoly(real poly[][ND_ND], real polyn[][ND_ND], int nps, int
 {
   int inext;
   bool hasSamePoints, allSamePoints;
-  real tol, dis;
+  real dis;
   real v[ND_ND];
 
-  tol = TOLERANCE;
-  
   *npsn = 0;
   hasSamePoints = false;
   allSamePoints = true;
@@ -941,7 +1029,7 @@ bool EraseSamePointsInPoly(real poly[][ND_ND], real polyn[][ND_ND], int nps, int
       v[j] = poly[inext][j] - poly[i][j];
     }
     dis = sqrt(DotProduct(v,v,ND_ND));
-    if(dis < tol)
+    if(FltEQ(dis, 0.0))
     {
       hasSamePoints = true;
     }

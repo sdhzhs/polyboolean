@@ -28,7 +28,7 @@ int main (int argc, char *argv[])
    poly1[2][1] = 1.0;
 
    //intersection and union of two congruent triangles, horizontal movement
-   for(j=0; j<4; j++)
+   for(j=-1; j<4; j++)
    {
      printf("Move: %d\n", j);
 
@@ -226,7 +226,7 @@ int main (int argc, char *argv[])
        poly1[i][j] = polyi[i][j];
    }
 
-   for(j=0; j<4; j++)
+   for(j=-1; j<4; j++)
    {
      printf("Move: %d\n", j);
 
