@@ -5,7 +5,7 @@
 
 #define ND_ND 3
 #define MAX_INTERSECTIONS 4
-#define TOLERANCE 1e-6
+#define TOLERANCE 1e-6 //geometric tolerence
 
 //comparison function of float pointing number based on tolerence
 inline int FltGT(real a, real b)
@@ -33,7 +33,7 @@ inline int FltEQ(real a, real b)
   return fabs(a-b) <= TOLERANCE;
 }
 
-//basic geometry calculation
+//basic geometric calculation
 real DotProduct(real* v1, real* v2, int ndims) //dot product of two n-dimentional vectors
 {
   int j;
@@ -106,7 +106,7 @@ int Isinner(real p[][3], real p0[3], int nps) //predicate a point is inside a 3D
   real ip, tol, epsi, epsi0;
   real v0[3], v1[3], v2[3], v3[3];
 
-  tol = TOLERANCE; //geometric tolerence
+  tol = TOLERANCE;
 
   for(j=0; j<3; j++)
     v0[j] = 0.0;
@@ -153,7 +153,7 @@ int InterSect(real* p0, real* p1, real* p2, real* p3, real* pi) //predicate inte
   real v0[3], v1[3], v2[3], v3[3], v4[3];
 
   ndims = 3;
-  tol = TOLERANCE; //geometric tolerence
+  tol = TOLERANCE;
 
   for(j=0; j<ndims; j++)
   {
@@ -267,12 +267,15 @@ void PolyProp(real p[][3], real c[3], real n[3], int nps) //calculate normal vec
       n[j] += v2[j];
     }
   }
+
+  if(nps == 0) return;
   for(j=0; j<3; j++)
   {
     c[j] /= nps;
-    n[j] /= nps-2;
   }
+
   dn = sqrt(DotProduct(n,n,3));
+  if(dn == 0.0) return;
   for(j=0; j<3; j++)
   {
     n[j] /= dn;
@@ -434,6 +437,21 @@ void PolyIntersect(real poly1[][3], real poly2[][3], real polyi[][3], int nps1, 
     (*npsi) = 0;
     return;
   }
+
+  PolyProp(poly1, pa, v0, nps1);
+  PolyProp(poly2, pb, v1, nps2);
+  if(DotProduct(v0,v1,3) < 0.0)
+  {
+    for(i=0; i<nps2/2; i++)
+    {
+      for(j=0; j<3; j++)
+      {
+        pa[j] = poly2[nps2-1-i][j];
+        poly2[nps2-1-i][j] = poly2[i][j];
+        poly2[i][j] = pa[j];
+      }
+    }
+  } 
 
   ninners = 0;
   ninsecs = 0;
@@ -715,6 +733,21 @@ void PolyMerge(real poly1[][3], real poly2[][3], real polym[][3], int nps1, int 
       }
     }
     return;
+  }
+
+  PolyProp(poly1, pa, v0, nps1);
+  PolyProp(poly2, pb, v1, nps2);
+  if(DotProduct(v0,v1,3) < 0.0)
+  {
+    for(i=0; i<nps2/2; i++)
+    {
+      for(j=0; j<3; j++)
+      {
+        pa[j] = poly2[nps2-1-i][j];
+        poly2[nps2-1-i][j] = poly2[i][j];
+        poly2[i][j] = pa[j];
+      }
+    }
   }
 
   ninners = 0;
