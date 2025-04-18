@@ -559,6 +559,19 @@ void PolyIntersect(real poly1[][3], real poly2[][3], real polyi[][3], int nps1, 
 
   printf("Points of inner and intersect: %d, %d\n", ninners, ninsecs);
 
+  if(ninners == 0 && ninsecs == 0 && Isinner(poly1, poly2[0], nps1))
+  {
+    *npsi = nps2;
+    for(n=0; n<nps2; n++)
+    {
+      for(j=0; j<3; j++)
+      {
+        polyi[n][j] = poly2[n][j];
+      }
+    }
+    return;
+  }
+
   npoints = 0;
   insecflag = -1;
   innerflag = -1;
