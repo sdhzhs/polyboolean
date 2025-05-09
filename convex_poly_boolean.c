@@ -5,7 +5,7 @@
 
 #define ND_ND 3
 #define MAX_INTERSECTIONS 4
-#define TOLERANCE 1e-6 //geometric tolerence
+#define TOLERANCE 1e-8 //geometric tolerence
 
 //comparison function of float pointing number based on tolerence
 inline int FltGT(real a, real b)
@@ -72,12 +72,14 @@ real PntProject(real c[3], real n[3], real p[3], real pp[3])  //normal projectio
 int PntShadow(real c[3], real n[3], real t[3], real p[3], real ps[3]) //ray projection of one point on one plane
 {
   int j;
-  real tp;
+  real tp, tol;
   real v[3];
+
+  tol = TOLERANCE*TOLERANCE;
 
   tp = DotProduct(n,t,3);
 
-  if(FltEQ(tp, 0.0))
+  if(fabs(tp)<tol)
   {
     for(j=0; j<3; j++)
     {
