@@ -5,7 +5,7 @@
 int main (int argc, char *argv[])
 {
    int i, j, k, npoints;
-   double poly1[6][3], poly2[4][3], polyi[16][3];
+   real poly1[6][3], poly2[4][3], polyi[16][3];
 
    for(i=0; i<3; i++)
    {
@@ -310,7 +310,7 @@ int main (int argc, char *argv[])
    printf("-----------------------------\n");
 
    //intersection and union of two congruent triangles, horizontal movement, on yoz plane
-   double p0[3] = {-5.0, 0.0, 0.0}, n[3] = {1.0, 0.0, 0.0}, t[3] = {-1.0/sqrt(2.0), 0.0, 1.0/sqrt(2.0)};
+   real p0[3] = {-5.0, 0.0, 0.0}, n[3] = {1.0, 0.0, 0.0}, t[3] = {-1.0/sqrt(2.0), 0.0, 1.0/sqrt(2.0)};
    
    for(i=0; i<3; i++)
    {

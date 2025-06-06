@@ -1,1 +1,1 @@
-gcc -Wall -O3 convex_poly_boolean.c main.c -lm -o polyop
+gcc -Wall -O3 geometry3d_basic.c convex_poly_boolean.c main.c -lm -o polyop
