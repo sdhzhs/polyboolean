@@ -3,7 +3,9 @@ vpath %.o obj
 # compile macro
 CC = gcc
 CCFLAGS = -W -O3 -fPIC
+#CCFLAGS = -W -O0 -g -fPIC
 LDFLAGS = -O3 -lm
+#LDFLAGS = -O0 -g -lm
 INCLUDES = -I.
 
 src:=$(sort $(wildcard *.c))

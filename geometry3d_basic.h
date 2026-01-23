@@ -1,32 +1,33 @@
 #pragma once
 
+#include <math.h>
 #include <stdbool.h>
 
 #define TOLERANCE 1e-8 //geometric tolerence
 typedef double real;
 
 //comparison function of float pointing number based on tolerence
-inline int FltGT(real a, real b)
+static inline int FltGT(real a, real b)
 {
   return a-b > TOLERANCE;
 }
 
-inline int FltGE(real a, real b)
+static inline int FltGE(real a, real b)
 {
   return a-b >= -TOLERANCE;
 }
 
-inline int FltLT(real a, real b)
+static inline int FltLT(real a, real b)
 {
   return a-b < -TOLERANCE;
 }
 
-inline int FltLE(real a, real b)
+static inline int FltLE(real a, real b)
 {
   return a-b <= TOLERANCE;
 }
 
-inline int FltEQ(real a, real b)
+static inline int FltEQ(real a, real b)
 {
   return fabs(a-b) <= TOLERANCE;
 }

@@ -1,4 +1,3 @@
-#include <math.h>
 #include <float.h>
 #include "geometry3d_basic.h"
 
