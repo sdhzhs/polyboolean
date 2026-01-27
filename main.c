@@ -218,8 +218,56 @@ int main (int argc, char *argv[])
 
    printf("-----------------------------\n");
 
-   //intersection and union of two different triangles, vertical movement
+   //intersection and union of two different triangles, horizontal movement
    printf("Case: 5\n");
+   for(j=0; j<5; j++)
+   {
+     printf("Move: %d\n", j);
+
+     poly2[0][0] = -3.0+j*1.0;
+     poly2[0][1] = 0.0;
+     poly2[1][0] = -2.0+j*1.0;
+     poly2[1][1] = -1.0;
+     poly2[2][0] = -1.0+j*1.0;
+     poly2[2][1] = 0.0;
+  
+     PolyIntersect(poly1, poly2, polyi, 3, 3, &npoints);
+  
+     printf("Points of intersected polygon: %d\n", npoints);
+     for(i=0; i<npoints; i++)
+     {
+       printf("Intersected polygon: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+     }
+  
+     PolyIntersect(poly2, poly1, polyi, 3, 3, &npoints);
+  
+     printf("Points of intersected polygon: %d\n", npoints);
+     for(i=0; i<npoints; i++)
+     {
+       printf("Intersected polygon: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+     }
+  
+     PolyMerge(poly1, poly2, polyi, 3, 3, &npoints);
+  
+     printf("Points of merged polygon: %d\n", npoints);
+     for(i=0; i<npoints; i++)
+     {
+       printf("Merged polygon: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+     }
+  
+     PolyMerge(poly2, poly1, polyi, 3, 3, &npoints);
+  
+     printf("Points of merged polygon: %d\n", npoints);
+     for(i=0; i<npoints; i++)
+     {
+       printf("Merged polygon: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+     }
+   }
+
+   printf("-----------------------------\n");
+
+   //intersection and union of two different triangles, vertical movement
+   printf("Case: 6\n");
    for(j=0; j<4; j++)
    {
      printf("Move: %d\n", j);
@@ -267,7 +315,7 @@ int main (int argc, char *argv[])
    printf("-----------------------------\n");
 
    //intersection and union of two congruent triangles, horizontal movement, opposite points order
-   printf("Case: 6\n");
+   printf("Case: 7\n");
    for(j=-1; j<4; j++)
    {
      printf("Move: %d\n", j);
@@ -315,7 +363,7 @@ int main (int argc, char *argv[])
    printf("-----------------------------\n");
 
    //intersection and union of two similar triangles, small sized one horizontal movement
-   printf("Case: 7\n");
+   printf("Case: 8\n");
    for(j=0; j<5; j++)
    {
      printf("Move: %d\n", j);
@@ -363,7 +411,7 @@ int main (int argc, char *argv[])
    printf("-----------------------------\n");
 
    //intersection and union of two congruent triangles, horizontal movement, on yoz plane
-   printf("Case: 8\n");
+   printf("Case: 9\n");
    real p0[3] = {-5.0, 0.0, 0.0}, n[3] = {1.0, 0.0, 0.0}, t[3] = {-1.0/sqrt(2.0), 0.0, 1.0/sqrt(2.0)};
    
    for(i=0; i<3; i++)
@@ -463,7 +511,7 @@ int main (int argc, char *argv[])
    poly1[5][1] = 0.5;
 
    //intersection and union between one static hexagon and one moving square, vertical movement
-   printf("Case: 9\n");
+   printf("Case: 10\n");
    for(j=0; j<7; j++)
    {
      printf("Move: %d\n", j);
@@ -513,7 +561,7 @@ int main (int argc, char *argv[])
    printf("-----------------------------\n");
 
    //intersection and union between one static hexagon and one moving square, horizontal movement
-   printf("Case: 10\n");
+   printf("Case: 11\n");
    for(j=0; j<9; j++)
    {
      printf("Move: %d\n", j);

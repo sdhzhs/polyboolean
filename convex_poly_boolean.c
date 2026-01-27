@@ -249,19 +249,19 @@ void PolyIntersect(real poly1[][3], real poly2[][3], real polyi[][3], int nps1, 
     inext = (n+1)%nps1;
     if(innerflags[n] == 0 && innerflags[inext] == 0)
     {
-      if(insecflags[n] > 0)
+      if(insecflags[n] == 2)
       {
         if(insecflag == -1)
         {
           for(i=1; i<nps1; i++)
           {
             iprev = (nps1+n-i)%nps1;
-            if(insecflags[iprev] > 0)
+            if(insecflags[iprev] == 2 || (insecflags[iprev] == 1 && innerflags[iprev] == 1 && innerflags[(iprev+1)%nps1] == 0))
             {
               insecflag = ibinsecs[2*iprev+1];
               break;
             }
-            else if(innerflags[iprev] == 1 && innerflags[(iprev+1)%nps1] == 0)
+            else if(insecflags[iprev] == 0 && innerflags[iprev] == 1 && innerflags[(iprev+1)%nps1] == 0)
             {
               OnPolyNodes(poly2, poly1[iprev], &insecflag, nps2);
               break;
@@ -295,15 +295,18 @@ void PolyIntersect(real poly1[][3], real poly2[][3], real polyi[][3], int nps1, 
         }
       }
 
-      if(insecflags[n] > 0) insecflag = ibinsecs[2*n+1];
+      if(insecflags[n] == 2) insecflag = ibinsecs[2*n+1];
 
-      for(i=0; i<insecflags[n]; i++)
+      if(insecflags[n] == 2 || (insecflags[n] == 1 && ((ninners == 0 && ninsecs == 2) || ninsecs == 1)))
       {
-        for(j=0; j<3; j++)
+        for(i=0; i<insecflags[n]; i++)
         {
-          polygon[npoints][j] = pinsecs[2*n+i][j];
+          for(j=0; j<3; j++)
+          {
+            polygon[npoints][j] = pinsecs[2*n+i][j];
+          }
+          npoints++;
         }
-        npoints++;
       }
     }
     else if(innerflags[n] == 0 && innerflags[inext] == 1)
@@ -415,8 +418,9 @@ void PolyMerge(real poly1[][3], real poly2[][3], real polym[][3], int nps1, int 
 {
   int i, j, n, inext, iprev = 0, ninners, ninsecs, npoints, innerflag, insecflag;
   int innerflags[nps1], insecflags[nps1], ibinsecs[2*nps1];
-  real tp, pa[3], pb[3], v0[3], v1[3], boundbox1[2][3], boundbox2[2][3];
+  real tp, sp, pa[3], pb[3], v0[3], v1[3], boundbox1[2][3], boundbox2[2][3];
   real pinsecs[2*nps1][3], polygon[3*nps1+nps2][3];
+  bool found;
 
   if (!poly1 || !poly2 || !polym || !npsm)
   {
@@ -478,48 +482,52 @@ void PolyMerge(real poly1[][3], real poly2[][3], real polym[][3], int nps1, int 
     inext = (n+1)%nps1;
     if(innerflags[n] == 0 && innerflags[inext] == 0)
     {
-      if(insecflags[n] == 1 && ninners == 0)
+      found = false;
+      if(insecflags[n] == 1 && ninners == 0 && ninsecs == 2)
       {
-        for(i=1; i<nps1; i++)
-        {
-          iprev = (nps1+n-i)%nps1;
-          if(insecflags[iprev] == 1 && innerflags[iprev] == 0 && innerflags[(iprev+1)%nps1] == 0)
-          {
-            break;
-          }
-        }
-
         for(j=0; j<3; j++)
         {
           v0[j] = pinsecs[2*n][j] - poly1[n][j];
         }
         tp = sqrt(DotProduct(v0,v0,3));
+        for(j=0; j<3; j++)
+        {
+          v0[j] = pinsecs[2*n][j] - poly2[(ibinsecs[2*n]+1)%nps2][j];
+        }
+        sp = sqrt(DotProduct(v0,v0,3));
 
-        if(FltEQ(tp, 0.0)) PolySlice(ibinsecs[2*iprev], ibinsecs[2*n], &npoints, nps2, poly2, polygon, false, true);
+        if(FltEQ(sp, 0.0)) found = true;
+
+        if(FltEQ(tp, 0.0) || FltEQ(sp, 0.0))
+        {
+          for(i=1; i<nps1; i++)
+          {
+            iprev = (nps1+n-i)%nps1;
+            if(insecflags[iprev] == 1 && innerflags[iprev] == 0 && innerflags[(iprev+1)%nps1] == 0)
+            {
+              break;
+            }
+          }
+          PolySlice(ibinsecs[2*iprev], ibinsecs[2*n], &npoints, nps2, poly2, polygon, false, true);
+        }
       }
-
-      for(j=0; j<3; j++)
-      {
-        polygon[npoints][j] = poly1[n][j];
-      }
-      npoints++;
-
-      if(insecflags[n] == 1 && ninners == 0)
+      
+      if(!found)
       {
         for(j=0; j<3; j++)
         {
-          v0[j] = pinsecs[2*n][j] - poly1[inext][j];
+          polygon[npoints][j] = poly1[n][j];
         }
-        tp = sqrt(DotProduct(v0,v0,3));
+        npoints++;
+      }
 
-        if(FltEQ(tp, 0.0))
+      if(insecflags[n] == 1 && ninners == 0 && ninsecs == 2)
+      {
+        for(j=0; j<3; j++)
         {
-          for(j=0; j<3; j++)
-          {
-            polygon[npoints][j] = pinsecs[2*n][j];
-          }
-          npoints++;
+          polygon[npoints][j] = pinsecs[2*n][j];
         }
+        npoints++;
       }
       
       if(insecflags[n] == 2)
@@ -540,7 +548,7 @@ void PolyMerge(real poly1[][3], real poly2[][3], real polym[][3], int nps1, int 
         {
           PolySlice(ibinsecs[2*n], ibinsecs[2*n+1], &npoints, nps2, poly2, polygon, false, false);
         }
-        else if(ninners==0 && ninsecs == 2)
+        else if(ninners == 0 && ninsecs == 2)
         {
           for(j=0; j<3; j++)
           {
@@ -633,6 +641,17 @@ void PolyMerge(real poly1[][3], real poly2[][3], real polym[][3], int nps1, int 
         }
 
         OnPolyNodes(poly2, poly1[n], &innerflag, nps2);
+
+        for(j=0; j<3; j++)
+        {
+          v0[j] = poly1[inext][j] - poly1[n][j];
+          v1[j] = poly2[innerflag][j] - poly2[(innerflag-1+nps2)%nps2][j];
+        }
+
+        CrossProduct(v0,v1,pa);
+        tp = DotProduct(pa,pa,3);
+        sp = DotProduct(v0,v1,3);
+        if(FltEQ(tp, 0.0) && FltLT(sp, 0.0)) innerflag = (innerflag-1+nps2)%nps2;
 
         if(insecflag >= 0 && innerflag >= 0) PolySlice(insecflag, innerflag, &npoints, nps2, poly2, polygon, false, true);
       }
