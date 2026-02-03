@@ -213,7 +213,7 @@ void PolyIntersect(real poly1[][3], real poly2[][3], real polyi[][3], int nps1, 
 
   PolyProp(poly1, pa, v0, nps1);
   PolyProp(poly2, pb, v1, nps2);
-  if(DotProduct(v0,v1,3) < 0.0)
+  if(FltLT(DotProduct(v0,v1,3), 0.0))
   {
     for(i=0; i<nps2/2; i++)
     {
@@ -446,7 +446,7 @@ void PolyMerge(real poly1[][3], real poly2[][3], real polym[][3], int nps1, int 
 
   PolyProp(poly1, pa, v0, nps1);
   PolyProp(poly2, pb, v1, nps2);
-  if(DotProduct(v0,v1,3) < 0.0)
+  if(FltLT(DotProduct(v0,v1,3), 0.0))
   {
     for(i=0; i<nps2/2; i++)
     {
