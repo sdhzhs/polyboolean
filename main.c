@@ -4,7 +4,7 @@
 int main (int argc, char *argv[])
 {
    int i, j, k, npoints;
-   real poly1[6][3], poly2[4][3], polyi[16][3];
+   real poly1[6][3], poly2[6][3], polyi[18][3];
 
    for(i=0; i<3; i++)
    {
@@ -702,6 +702,662 @@ int main (int argc, char *argv[])
      {
        printf("Merged polygon: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
      }
+   }
+
+
+   //Case 14: Two polygons touching at a single vertex
+   printf("Case: 14 - Touching at Single Vertex\n");
+   
+   poly1[0][0] = -1.0;
+   poly1[0][1] = 0.0;
+   poly1[0][2] = 0.0;
+   poly1[1][0] = 1.0;
+   poly1[1][1] = 0.0;
+   poly1[1][2] = 0.0;
+   poly1[2][0] = 0.0;
+   poly1[2][1] = 1.5;
+   poly1[2][2] = 0.0;
+
+   poly2[0][0] = 0.0;
+   poly2[0][1] = 1.5;
+   poly2[0][2] = 0.0;
+   poly2[1][0] = 1.0;
+   poly2[1][1] = 1.5;
+   poly2[1][2] = 0.0;
+   poly2[2][0] = 0.5;
+   poly2[2][1] = 2.5;
+   poly2[2][2] = 0.0;
+
+   PolyIntersect(poly1, poly2, polyi, 3, 3, &npoints);
+   printf("Intersection (poly1, poly2) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyIntersect(poly2, poly1, polyi, 3, 3, &npoints);
+   printf("Intersection (poly2, poly1) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyMerge(poly1, poly2, polyi, 3, 3, &npoints);
+   printf("Merged polygon (poly1, poly2) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyMerge(poly2, poly1, polyi, 3, 3, &npoints);
+   printf("Merged polygon (poly2, poly1) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   printf("-----------------------------\n");
+
+   //Case 15: Two polygons sharing an edge
+   printf("Case: 15 - Sharing an Edge\n");
+   
+   poly1[0][0] = -1.0;
+   poly1[0][1] = -1.0;
+   poly1[0][2] = 0.0;
+   poly1[1][0] = 1.0;
+   poly1[1][1] = -1.0;
+   poly1[1][2] = 0.0;
+   poly1[2][0] = 0.0;
+   poly1[2][1] = 1.0;
+   poly1[2][2] = 0.0;
+
+   poly2[0][0] = -1.0;
+   poly2[0][1] = -1.0;
+   poly2[0][2] = 0.0;
+   poly2[1][0] = 1.0;
+   poly2[1][1] = -1.0;
+   poly2[1][2] = 0.0;
+   poly2[2][0] = 0.0;
+   poly2[2][1] = -2.0;
+   poly2[2][2] = 0.0;
+
+   PolyIntersect(poly1, poly2, polyi, 3, 3, &npoints);
+   printf("Intersection (poly1, poly2) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyIntersect(poly2, poly1, polyi, 3, 3, &npoints);
+   printf("Intersection (poly2, poly1) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyMerge(poly1, poly2, polyi, 3, 3, &npoints);
+   printf("Merged polygon (poly1, poly2) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyMerge(poly2, poly1, polyi, 3, 3, &npoints);
+   printf("Merged polygon (poly2, poly1) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+
+   //Case 16: Two identical polygons (coincident)
+   printf("Case: 16 - Identical/Coincident Polygons\n");
+   
+   poly1[0][0] = -1.0;
+   poly1[0][1] = -1.0;
+   poly1[0][2] = 0.0;
+   poly1[1][0] = 1.0;
+   poly1[1][1] = -1.0;
+   poly1[1][2] = 0.0;
+   poly1[2][0] = 0.0;
+   poly1[2][1] = 1.0;
+   poly1[2][2] = 0.0;
+
+   poly2[0][0] = -1.0;
+   poly2[0][1] = -1.0;
+   poly2[0][2] = 0.0;
+   poly2[1][0] = 1.0;
+   poly2[1][1] = -1.0;
+   poly2[1][2] = 0.0;
+   poly2[2][0] = 0.0;
+   poly2[2][1] = 1.0;
+   poly2[2][2] = 0.0;
+
+   PolyIntersect(poly1, poly2, polyi, 3, 3, &npoints);
+   printf("Intersection (poly1, poly2) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyIntersect(poly2, poly1, polyi, 3, 3, &npoints);
+   printf("Intersection (poly2, poly1) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyMerge(poly1, poly2, polyi, 3, 3, &npoints);
+   printf("Merged polygon (poly1, poly2) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyMerge(poly2, poly1, polyi, 3, 3, &npoints);
+   printf("Merged polygon (poly2, poly1) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+
+   //Case 17: Vertex of one polygon on edge interior of another
+   printf("Case: 17 - Vertex on Edge Interior\n");
+   
+   poly1[0][0] = -3.0;
+   poly1[0][1] = -1.0;
+   poly1[0][2] = 0.0;
+   poly1[1][0] = 3.0;
+   poly1[1][1] = -1.0;
+   poly1[1][2] = 0.0;
+   poly1[2][0] = 0.0;
+   poly1[2][1] = 2.0;
+   poly1[2][2] = 0.0;
+
+   poly2[0][0] = 0.0;
+   poly2[0][1] = -1.0;
+   poly2[0][2] = 0.0;
+   poly2[1][0] = 1.5;
+   poly2[1][1] = 0.5;
+   poly2[1][2] = 0.0;
+   poly2[2][0] = -1.5;
+   poly2[2][1] = 0.5;
+   poly2[2][2] = 0.0;
+
+   PolyIntersect(poly1, poly2, polyi, 3, 3, &npoints);
+   printf("Intersection (poly1, poly2) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyIntersect(poly2, poly1, polyi, 3, 3, &npoints);
+   printf("Intersection (poly2, poly1) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyMerge(poly1, poly2, polyi, 3, 3, &npoints);
+   printf("Merged polygon (poly1, poly2) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyMerge(poly2, poly1, polyi, 3, 3, &npoints);
+   printf("Merged polygon (poly2, poly1) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   printf("-----------------------------\n");
+
+   //Case 18: Partial collinear edge overlap
+   printf("Case: 18 - Partial Collinear Edge Overlap\n");
+   
+   poly1[0][0] = -2.0;
+   poly1[0][1] = -1.0;
+   poly1[0][2] = 0.0;
+   poly1[1][0] = 2.0;
+   poly1[1][1] = -1.0;
+   poly1[1][2] = 0.0;
+   poly1[2][0] = 0.0;
+   poly1[2][1] = 2.0;
+   poly1[2][2] = 0.0;
+
+   poly2[0][0] = -1.0;
+   poly2[0][1] = -1.0;
+   poly2[0][2] = 0.0;
+   poly2[1][0] = 3.0;
+   poly2[1][1] = -1.0;
+   poly2[1][2] = 0.0;
+   poly2[2][0] = 1.0;
+   poly2[2][1] = 2.0;
+   poly2[2][2] = 0.0;
+
+   PolyIntersect(poly1, poly2, polyi, 3, 3, &npoints);
+   printf("Intersection (poly1, poly2) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyIntersect(poly2, poly1, polyi, 3, 3, &npoints);
+   printf("Intersection (poly2, poly1) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyMerge(poly1, poly2, polyi, 3, 3, &npoints);
+   printf("Merged polygon (poly1, poly2) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyMerge(poly2, poly1, polyi, 3, 3, &npoints);
+   printf("Merged polygon (poly2, poly1) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   printf("-----------------------------\n");
+
+   //Case 19: Multiple vertices on edges - triangle and quadrilateral
+   printf("Case: 19 - Multiple Vertices on Edges (Triangle-Quadrilateral)\n");
+   
+   poly1[0][0] = -1.5;
+   poly1[0][1] = -1.0;
+   poly1[0][2] = 0.0;
+   poly1[1][0] = 1.5;
+   poly1[1][1] = -1.0;
+   poly1[1][2] = 0.0;
+   poly1[2][0] = 0.0;
+   poly1[2][1] = 1.5;
+   poly1[2][2] = 0.0;
+
+   poly2[0][0] = -1.0;
+   poly2[0][1] = -0.5;
+   poly2[0][2] = 0.0;
+   poly2[1][0] = 1.0;
+   poly2[1][1] = -0.5;
+   poly2[1][2] = 0.0;
+   poly2[2][0] = 1.0;
+   poly2[2][1] = 0.8;
+   poly2[2][2] = 0.0;
+   poly2[3][0] = -1.0;
+   poly2[3][1] = 0.8;
+   poly2[3][2] = 0.0;
+
+   PolyIntersect(poly1, poly2, polyi, 3, 4, &npoints);
+   printf("Intersection (poly1, poly2) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyIntersect(poly2, poly1, polyi, 4, 3, &npoints);
+   printf("Intersection (poly2, poly1) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyMerge(poly1, poly2, polyi, 3, 4, &npoints);
+   printf("Merged polygon (poly1, poly2) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyMerge(poly2, poly1, polyi, 4, 3, &npoints);
+   printf("Merged polygon (poly2, poly1) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+
+   //Case 20: Two Quadrilaterals with spiral crossing pattern
+   printf("Case: 20 - Two Quadrilaterals Spiral Pattern\n");
+   
+   poly1[0][0] = -1.0;
+   poly1[0][1] = -1.5;
+   poly1[0][2] = 0.0;
+   poly1[1][0] = 1.5;
+   poly1[1][1] = -0.5;
+   poly1[1][2] = 0.0;
+   poly1[2][0] = 1.0;
+   poly1[2][1] = 1.5;
+   poly1[2][2] = 0.0;
+   poly1[3][0] = -1.5;
+   poly1[3][1] = 0.5;
+   poly1[3][2] = 0.0;
+
+   poly2[0][0] = -1.5;
+   poly2[0][1] = -0.5;
+   poly2[0][2] = 0.0;
+   poly2[1][0] = 1.0;
+   poly2[1][1] = -1.0;
+   poly2[1][2] = 0.0;
+   poly2[2][0] = 1.5;
+   poly2[2][1] = 1.0;
+   poly2[2][2] = 0.0;
+   poly2[3][0] = -0.5;
+   poly2[3][1] = 1.5;
+   poly2[3][2] = 0.0;
+
+   PolyIntersect(poly1, poly2, polyi, 4, 4, &npoints);
+   printf("Intersection (poly1, poly2) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyIntersect(poly2, poly1, polyi, 4, 4, &npoints);
+   printf("Intersection (poly2, poly1) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyMerge(poly1, poly2, polyi, 4, 4, &npoints);
+   printf("Merged polygon (poly1, poly2) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyMerge(poly2, poly1, polyi, 4, 4, &npoints);
+   printf("Merged polygon (poly2, poly1) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   printf("-----------------------------\n");
+
+   //Case 21: Hexagon-Triangle with vertex on edge and deep overlap
+   printf("Case: 21 - Hexagon-Triangle Overlapping with Edge Contact\n");
+   
+   poly1[0][0] = -1.5;
+   poly1[0][1] = -1.0;
+   poly1[0][2] = 0.0;
+   poly1[1][0] = 1.5;
+   poly1[1][1] = -1.0;
+   poly1[1][2] = 0.0;
+   poly1[2][0] = 2.0;
+   poly1[2][1] = 0.5;
+   poly1[2][2] = 0.0;
+   poly1[3][0] = 1.0;
+   poly1[3][1] = 1.5;
+   poly1[3][2] = 0.0;
+   poly1[4][0] = -1.0;
+   poly1[4][1] = 1.5;
+   poly1[4][2] = 0.0;
+   poly1[5][0] = -2.0;
+   poly1[5][1] = 0.5;
+   poly1[5][2] = 0.0;
+
+   poly2[0][0] = -1.0;
+   poly2[0][1] = -0.5;
+   poly2[0][2] = 0.0;
+   poly2[1][0] = 1.5;
+   poly2[1][1] = 0.5;
+   poly2[1][2] = 0.0;
+   poly2[2][0] = -0.25;
+   poly2[2][1] = 1.5;
+   poly2[2][2] = 0.0;
+
+   PolyIntersect(poly1, poly2, polyi, 6, 3, &npoints);
+   printf("Intersection (poly1, poly2) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyIntersect(poly2, poly1, polyi, 3, 6, &npoints);
+   printf("Intersection (poly2, poly1) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyMerge(poly1, poly2, polyi, 6, 3, &npoints);
+   printf("Merged polygon (poly1, poly2) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyMerge(poly2, poly1, polyi, 3, 6, &npoints);
+   printf("Merged polygon (poly2, poly1) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   printf("-----------------------------\n");
+
+   //Case 22: Two edges crossing at interior points (edge-to-edge X pattern)
+   printf("Case: 22 - Two Edges Crossing at Interior Points\n");
+   
+   poly1[0][0] = -1.0;
+   poly1[0][1] = -1.0;
+   poly1[0][2] = 0.0;
+   poly1[1][0] = 2.0;
+   poly1[1][1] = 1.0;
+   poly1[1][2] = 0.0;
+   poly1[2][0] = 0.0;
+   poly1[2][1] = 2.0;
+   poly1[2][2] = 0.0;
+
+   poly2[0][0] = 0.0;
+   poly2[0][1] = -1.0;
+   poly2[0][2] = 0.0;
+   poly2[1][0] = 1.5;
+   poly2[1][1] = 0.5;
+   poly2[1][2] = 0.0;
+   poly2[2][0] = 0.0;
+   poly2[2][1] = 1.5;
+   poly2[2][2] = 0.0;
+
+   PolyIntersect(poly1, poly2, polyi, 3, 3, &npoints);
+   printf("Intersection (poly1, poly2) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyIntersect(poly2, poly1, polyi, 3, 3, &npoints);
+   printf("Intersection (poly2, poly1) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyMerge(poly1, poly2, polyi, 3, 3, &npoints);
+   printf("Merged polygon (poly1, poly2) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyMerge(poly2, poly1, polyi, 3, 3, &npoints);
+   printf("Merged polygon (poly2, poly1) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   printf("-----------------------------\n");
+
+   //Case 23: Inner polygon with one edge tangent to outer polygon boundary
+   printf("Case: 23 - Inner Polygon with Edge Tangent to Boundary\n");
+   
+   poly1[0][0] = -2.0;
+   poly1[0][1] = -2.0;
+   poly1[0][2] = 0.0;
+   poly1[1][0] = 2.0;
+   poly1[1][1] = -2.0;
+   poly1[1][2] = 0.0;
+   poly1[2][0] = 2.0;
+   poly1[2][1] = 2.0;
+   poly1[2][2] = 0.0;
+   poly1[3][0] = -2.0;
+   poly1[3][1] = 2.0;
+   poly1[3][2] = 0.0;
+
+   poly2[0][0] = -1.0;
+   poly2[0][1] = 0.0;
+   poly2[0][2] = 0.0;
+   poly2[1][0] = 1.0;
+   poly2[1][1] = 0.0;
+   poly2[1][2] = 0.0;
+   poly2[2][0] = 0.0;
+   poly2[2][1] = 1.0;
+   poly2[2][2] = 0.0;
+
+   PolyIntersect(poly1, poly2, polyi, 4, 3, &npoints);
+   printf("Intersection (poly1, poly2) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyIntersect(poly2, poly1, polyi, 3, 4, &npoints);
+   printf("Intersection (poly2, poly1) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyMerge(poly1, poly2, polyi, 4, 3, &npoints);
+   printf("Merged polygon (poly1, poly2) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyMerge(poly2, poly1, polyi, 3, 4, &npoints);
+   printf("Merged polygon (poly2, poly1) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   printf("-----------------------------\n");
+
+   //Case 24: Partial collinear edge overlap with one vertex inside
+   printf("Case: 24 - Collinear Edge Overlap with Vertex Inside\n");
+   
+   poly1[0][0] = -1.5;
+   poly1[0][1] = 0.0;
+   poly1[0][2] = 0.0;
+   poly1[1][0] = 1.5;
+   poly1[1][1] = 0.0;
+   poly1[1][2] = 0.0;
+   poly1[2][0] = 0.0;
+   poly1[2][1] = 1.5;
+   poly1[2][2] = 0.0;
+
+   poly2[0][0] = -0.5;
+   poly2[0][1] = 0.0;
+   poly2[0][2] = 0.0;
+   poly2[1][0] = 2.0;
+   poly2[1][1] = 0.0;
+   poly2[1][2] = 0.0;
+   poly2[2][0] = 0.5;
+   poly2[2][1] = 1.0;
+   poly2[2][2] = 0.0;
+
+   PolyIntersect(poly1, poly2, polyi, 3, 3, &npoints);
+   printf("Intersection (poly1, poly2) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyIntersect(poly2, poly1, polyi, 3, 3, &npoints);
+   printf("Intersection (poly2, poly1) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyMerge(poly1, poly2, polyi, 3, 3, &npoints);
+   printf("Merged polygon (poly1, poly2) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyMerge(poly2, poly1, polyi, 3, 3, &npoints);
+   printf("Merged polygon (poly2, poly1) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   printf("-----------------------------\n");
+
+   //Case 25: Quadrilateral-Triangle T-junction (vertex on edge creating T pattern)
+   printf("Case: 25 - T-Junction with Vertex on Edge\n");
+   
+   poly1[0][0] = -1.5;
+   poly1[0][1] = -1.0;
+   poly1[0][2] = 0.0;
+   poly1[1][0] = 1.5;
+   poly1[1][1] = -1.0;
+   poly1[1][2] = 0.0;
+   poly1[2][0] = 1.5;
+   poly1[2][1] = 1.5;
+   poly1[2][2] = 0.0;
+   poly1[3][0] = -1.5;
+   poly1[3][1] = 1.5;
+   poly1[3][2] = 0.0;
+
+   poly2[0][0] = 0.0;
+   poly2[0][1] = -1.0;
+   poly2[0][2] = 0.0;
+   poly2[1][0] = 1.0;
+   poly2[1][1] = 0.5;
+   poly2[1][2] = 0.0;
+   poly2[2][0] = -1.0;
+   poly2[2][1] = 0.5;
+   poly2[2][2] = 0.0;
+
+   PolyIntersect(poly1, poly2, polyi, 4, 3, &npoints);
+   printf("Intersection (poly1, poly2) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyIntersect(poly2, poly1, polyi, 3, 4, &npoints);
+   printf("Intersection (poly2, poly1) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyMerge(poly1, poly2, polyi, 4, 3, &npoints);
+   printf("Merged polygon (poly1, poly2) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
+   }
+
+   PolyMerge(poly2, poly1, polyi, 3, 4, &npoints);
+   printf("Merged polygon (poly2, poly1) points: %d\n", npoints);
+   for(i=0; i<npoints; i++)
+   {
+     printf("Point: %le, %le, %le\n", polyi[i][0], polyi[i][1], polyi[i][2]);
    }
 
    return 0;

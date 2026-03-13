@@ -1932,3 +1932,357 @@ Merged polygon: 1.000000e+00, 0.000000e+00, 0.000000e+00
 Merged polygon: 1.000000e+00, -1.000000e+00, 0.000000e+00
 Merged polygon: 3.000000e+00, -1.000000e+00, 0.000000e+00
 Merged polygon: 3.000000e+00, 1.000000e+00, 0.000000e+00
+Case: 14 - Touching at Single Vertex
+Points of inner and intersect: 1, 0
+Intersection (poly1, poly2) points: 1
+Point: 0.000000e+00, 1.500000e+00, 0.000000e+00
+Points of inner and intersect: 1, 0
+Intersection (poly2, poly1) points: 1
+Point: 0.000000e+00, 1.500000e+00, 0.000000e+00
+Points of inner and intersect: 1, 0
+Merged polygon (poly1, poly2) points: 6
+Point: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Point: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Point: 0.000000e+00, 1.500000e+00, 0.000000e+00
+Point: 1.000000e+00, 1.500000e+00, 0.000000e+00
+Point: 5.000000e-01, 2.500000e+00, 0.000000e+00
+Point: 0.000000e+00, 1.500000e+00, 0.000000e+00
+Points of inner and intersect: 1, 0
+Merged polygon (poly2, poly1) points: 6
+Point: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Point: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Point: 0.000000e+00, 1.500000e+00, 0.000000e+00
+Point: 1.000000e+00, 1.500000e+00, 0.000000e+00
+Point: 5.000000e-01, 2.500000e+00, 0.000000e+00
+Point: 0.000000e+00, 1.500000e+00, 0.000000e+00
+-----------------------------
+Case: 15 - Sharing an Edge
+Points of inner and intersect: 2, 0
+Intersection (poly1, poly2) points: 2
+Point: -1.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 1.000000e+00, -1.000000e+00, 0.000000e+00
+Points of inner and intersect: 2, 0
+Intersection (poly2, poly1) points: 2
+Point: 1.000000e+00, -1.000000e+00, 0.000000e+00
+Point: -1.000000e+00, -1.000000e+00, 0.000000e+00
+Points of inner and intersect: 2, 0
+Merged polygon (poly1, poly2) points: 4
+Point: 0.000000e+00, -2.000000e+00, 0.000000e+00
+Point: 1.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Point: -1.000000e+00, -1.000000e+00, 0.000000e+00
+Points of inner and intersect: 2, 0
+Merged polygon (poly2, poly1) points: 4
+Point: 0.000000e+00, -2.000000e+00, 0.000000e+00
+Point: 1.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Point: -1.000000e+00, -1.000000e+00, 0.000000e+00
+Case: 16 - Identical/Coincident Polygons
+Points of inner and intersect: 3, 0
+Intersection (poly1, poly2) points: 3
+Point: -1.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 1.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Points of inner and intersect: 3, 0
+Intersection (poly2, poly1) points: 3
+Point: -1.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 1.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Points of inner and intersect: 3, 0
+Merged polygon (poly1, poly2) points: 3
+Point: -1.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 1.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Points of inner and intersect: 3, 0
+Merged polygon (poly2, poly1) points: 3
+Point: -1.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 1.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Case: 17 - Vertex on Edge Interior
+Points of inner and intersect: 0, 6
+Intersection (poly1, poly2) points: 3
+Point: 0.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 1.500000e+00, 5.000000e-01, 0.000000e+00
+Point: -1.500000e+00, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 6
+Intersection (poly2, poly1) points: 3
+Point: 0.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 1.500000e+00, 5.000000e-01, 0.000000e+00
+Point: -1.500000e+00, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 6
+Merged polygon (poly1, poly2) points: 6
+Point: -3.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 0.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 3.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 1.500000e+00, 5.000000e-01, 0.000000e+00
+Point: 0.000000e+00, 2.000000e+00, 0.000000e+00
+Point: -1.500000e+00, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 6
+Merged polygon (poly2, poly1) points: 6
+Point: 0.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 3.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 1.500000e+00, 5.000000e-01, 0.000000e+00
+Point: 0.000000e+00, 2.000000e+00, 0.000000e+00
+Point: -1.500000e+00, 5.000000e-01, 0.000000e+00
+Point: -3.000000e+00, -1.000000e+00, 0.000000e+00
+-----------------------------
+Case: 18 - Partial Collinear Edge Overlap
+Points of inner and intersect: 0, 3
+Intersection (poly1, poly2) points: 3
+Point: -1.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 2.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 5.000000e-01, 1.250000e+00, 0.000000e+00
+Points of inner and intersect: 0, 3
+Intersection (poly2, poly1) points: 3
+Point: 2.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 5.000000e-01, 1.250000e+00, 0.000000e+00
+Point: -1.000000e+00, -1.000000e+00, 0.000000e+00
+Points of inner and intersect: 0, 3
+Merged polygon (poly1, poly2) points: 6
+Point: -2.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 2.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 3.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 1.000000e+00, 2.000000e+00, 0.000000e+00
+Point: 5.000000e-01, 1.250000e+00, 0.000000e+00
+Point: 0.000000e+00, 2.000000e+00, 0.000000e+00
+Points of inner and intersect: 0, 3
+Merged polygon (poly2, poly1) points: 6
+Point: -1.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 3.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 1.000000e+00, 2.000000e+00, 0.000000e+00
+Point: 5.000000e-01, 1.250000e+00, 0.000000e+00
+Point: 0.000000e+00, 2.000000e+00, 0.000000e+00
+Point: -2.000000e+00, -1.000000e+00, 0.000000e+00
+-----------------------------
+Case: 19 - Multiple Vertices on Edges (Triangle-Quadrilateral)
+Points of inner and intersect: 0, 4
+Intersection (poly1, poly2) points: 6
+Point: -1.000000e+00, -5.000000e-01, 0.000000e+00
+Point: 1.000000e+00, -5.000000e-01, 0.000000e+00
+Point: 1.000000e+00, -1.666667e-01, 0.000000e+00
+Point: 4.200000e-01, 8.000000e-01, 0.000000e+00
+Point: -4.200000e-01, 8.000000e-01, 0.000000e+00
+Point: -1.000000e+00, -1.666667e-01, 0.000000e+00
+Points of inner and intersect: 2, 4
+Intersection (poly2, poly1) points: 6
+Point: -1.000000e+00, -5.000000e-01, 0.000000e+00
+Point: 1.000000e+00, -5.000000e-01, 0.000000e+00
+Point: 1.000000e+00, -1.666667e-01, 0.000000e+00
+Point: 4.200000e-01, 8.000000e-01, 0.000000e+00
+Point: -4.200000e-01, 8.000000e-01, 0.000000e+00
+Point: -1.000000e+00, -1.666667e-01, 0.000000e+00
+Points of inner and intersect: 0, 4
+Merged polygon (poly1, poly2) points: 9
+Point: -1.500000e+00, -1.000000e+00, 0.000000e+00
+Point: 1.500000e+00, -1.000000e+00, 0.000000e+00
+Point: 1.000000e+00, -1.666667e-01, 0.000000e+00
+Point: 1.000000e+00, 8.000000e-01, 0.000000e+00
+Point: 4.200000e-01, 8.000000e-01, 0.000000e+00
+Point: 0.000000e+00, 1.500000e+00, 0.000000e+00
+Point: -4.200000e-01, 8.000000e-01, 0.000000e+00
+Point: -1.000000e+00, 8.000000e-01, 0.000000e+00
+Point: -1.000000e+00, -1.666667e-01, 0.000000e+00
+Points of inner and intersect: 2, 4
+Merged polygon (poly2, poly1) points: 9
+Point: -1.500000e+00, -1.000000e+00, 0.000000e+00
+Point: 1.500000e+00, -1.000000e+00, 0.000000e+00
+Point: 1.000000e+00, -1.666667e-01, 0.000000e+00
+Point: 1.000000e+00, 8.000000e-01, 0.000000e+00
+Point: 4.200000e-01, 8.000000e-01, 0.000000e+00
+Point: 0.000000e+00, 1.500000e+00, 0.000000e+00
+Point: -4.200000e-01, 8.000000e-01, 0.000000e+00
+Point: -1.000000e+00, 8.000000e-01, 0.000000e+00
+Point: -1.000000e+00, -1.666667e-01, 0.000000e+00
+Case: 20 - Two Quadrilaterals Spiral Pattern
+Points of inner and intersect: 0, 8
+Intersection (poly1, poly2) points: 8
+Point: 5.000000e-01, -9.000000e-01, 0.000000e+00
+Point: 1.083333e+00, -6.666667e-01, 0.000000e+00
+Point: 1.312500e+00, 2.500000e-01, 0.000000e+00
+Point: 1.100000e+00, 1.100000e+00, 0.000000e+00
+Point: 4.230769e-01, 1.269231e+00, 0.000000e+00
+Point: -8.750000e-01, 7.500000e-01, 0.000000e+00
+Point: -1.333333e+00, -1.666667e-01, 0.000000e+00
+Point: -1.236842e+00, -5.526316e-01, 0.000000e+00
+Points of inner and intersect: 0, 8
+Intersection (poly2, poly1) points: 8
+Point: -1.236842e+00, -5.526316e-01, 0.000000e+00
+Point: 5.000000e-01, -9.000000e-01, 0.000000e+00
+Point: 1.083333e+00, -6.666667e-01, 0.000000e+00
+Point: 1.312500e+00, 2.500000e-01, 0.000000e+00
+Point: 1.100000e+00, 1.100000e+00, 0.000000e+00
+Point: 4.230769e-01, 1.269231e+00, 0.000000e+00
+Point: -8.750000e-01, 7.500000e-01, 0.000000e+00
+Point: -1.333333e+00, -1.666667e-01, 0.000000e+00
+Points of inner and intersect: 0, 8
+Merged polygon (poly1, poly2) points: 16
+Point: -1.000000e+00, -1.500000e+00, 0.000000e+00
+Point: 5.000000e-01, -9.000000e-01, 0.000000e+00
+Point: 1.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 1.083333e+00, -6.666667e-01, 0.000000e+00
+Point: 1.500000e+00, -5.000000e-01, 0.000000e+00
+Point: 1.312500e+00, 2.500000e-01, 0.000000e+00
+Point: 1.500000e+00, 1.000000e+00, 0.000000e+00
+Point: 1.100000e+00, 1.100000e+00, 0.000000e+00
+Point: 1.000000e+00, 1.500000e+00, 0.000000e+00
+Point: 4.230769e-01, 1.269231e+00, 0.000000e+00
+Point: -5.000000e-01, 1.500000e+00, 0.000000e+00
+Point: -8.750000e-01, 7.500000e-01, 0.000000e+00
+Point: -1.500000e+00, 5.000000e-01, 0.000000e+00
+Point: -1.333333e+00, -1.666667e-01, 0.000000e+00
+Point: -1.500000e+00, -5.000000e-01, 0.000000e+00
+Point: -1.236842e+00, -5.526316e-01, 0.000000e+00
+Points of inner and intersect: 0, 8
+Merged polygon (poly2, poly1) points: 16
+Point: -1.500000e+00, -5.000000e-01, 0.000000e+00
+Point: -1.236842e+00, -5.526316e-01, 0.000000e+00
+Point: -1.000000e+00, -1.500000e+00, 0.000000e+00
+Point: 5.000000e-01, -9.000000e-01, 0.000000e+00
+Point: 1.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 1.083333e+00, -6.666667e-01, 0.000000e+00
+Point: 1.500000e+00, -5.000000e-01, 0.000000e+00
+Point: 1.312500e+00, 2.500000e-01, 0.000000e+00
+Point: 1.500000e+00, 1.000000e+00, 0.000000e+00
+Point: 1.100000e+00, 1.100000e+00, 0.000000e+00
+Point: 1.000000e+00, 1.500000e+00, 0.000000e+00
+Point: 4.230769e-01, 1.269231e+00, 0.000000e+00
+Point: -5.000000e-01, 1.500000e+00, 0.000000e+00
+Point: -8.750000e-01, 7.500000e-01, 0.000000e+00
+Point: -1.500000e+00, 5.000000e-01, 0.000000e+00
+Point: -1.333333e+00, -1.666667e-01, 0.000000e+00
+-----------------------------
+Case: 21 - Hexagon-Triangle Overlapping with Edge Contact
+Points of inner and intersect: 0, 2
+Intersection (poly1, poly2) points: 3
+Point: -1.000000e+00, -5.000000e-01, 0.000000e+00
+Point: 1.500000e+00, 5.000000e-01, 0.000000e+00
+Point: -2.500000e-01, 1.500000e+00, 0.000000e+00
+Points of inner and intersect: 2, 2
+Intersection (poly2, poly1) points: 3
+Point: -1.000000e+00, -5.000000e-01, 0.000000e+00
+Point: 1.500000e+00, 5.000000e-01, 0.000000e+00
+Point: -2.500000e-01, 1.500000e+00, 0.000000e+00
+Points of inner and intersect: 0, 2
+Merged polygon (poly1, poly2) points: 7
+Point: -1.500000e+00, -1.000000e+00, 0.000000e+00
+Point: 1.500000e+00, -1.000000e+00, 0.000000e+00
+Point: 2.000000e+00, 5.000000e-01, 0.000000e+00
+Point: 1.000000e+00, 1.500000e+00, 0.000000e+00
+Point: -2.500000e-01, 1.500000e+00, 0.000000e+00
+Point: -1.000000e+00, 1.500000e+00, 0.000000e+00
+Point: -2.000000e+00, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 2, 2
+Merged polygon (poly2, poly1) points: 7
+Point: -1.000000e+00, 1.500000e+00, 0.000000e+00
+Point: -2.000000e+00, 5.000000e-01, 0.000000e+00
+Point: -1.500000e+00, -1.000000e+00, 0.000000e+00
+Point: 1.500000e+00, -1.000000e+00, 0.000000e+00
+Point: 2.000000e+00, 5.000000e-01, 0.000000e+00
+Point: 1.000000e+00, 1.500000e+00, 0.000000e+00
+Point: -2.500000e-01, 1.500000e+00, 0.000000e+00
+-----------------------------
+Case: 22 - Two Edges Crossing at Interior Points
+Points of inner and intersect: 0, 2
+Intersection (poly1, poly2) points: 3
+Point: 0.000000e+00, 1.500000e+00, 0.000000e+00
+Point: 0.000000e+00, -3.333333e-01, 0.000000e+00
+Point: 1.375000e+00, 5.833333e-01, 0.000000e+00
+Points of inner and intersect: 1, 2
+Intersection (poly2, poly1) points: 3
+Point: 1.375000e+00, 5.833333e-01, 0.000000e+00
+Point: 0.000000e+00, 1.500000e+00, 0.000000e+00
+Point: 0.000000e+00, -3.333333e-01, 0.000000e+00
+Points of inner and intersect: 0, 2
+Merged polygon (poly1, poly2) points: 7
+Point: -1.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 0.000000e+00, -3.333333e-01, 0.000000e+00
+Point: 0.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 1.500000e+00, 5.000000e-01, 0.000000e+00
+Point: 1.375000e+00, 5.833333e-01, 0.000000e+00
+Point: 2.000000e+00, 1.000000e+00, 0.000000e+00
+Point: 0.000000e+00, 2.000000e+00, 0.000000e+00
+Points of inner and intersect: 1, 2
+Merged polygon (poly2, poly1) points: 7
+Point: 0.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 1.500000e+00, 5.000000e-01, 0.000000e+00
+Point: 1.375000e+00, 5.833333e-01, 0.000000e+00
+Point: 2.000000e+00, 1.000000e+00, 0.000000e+00
+Point: 0.000000e+00, 2.000000e+00, 0.000000e+00
+Point: -1.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 0.000000e+00, -3.333333e-01, 0.000000e+00
+-----------------------------
+Case: 23 - Inner Polygon with Edge Tangent to Boundary
+Points of inner and intersect: 0, 0
+Intersection (poly1, poly2) points: 3
+Point: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Point: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Point: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Points of inner and intersect: 3, 0
+Intersection (poly2, poly1) points: 3
+Point: -1.000000e+00, 0.000000e+00, 0.000000e+00
+Point: 1.000000e+00, 0.000000e+00, 0.000000e+00
+Point: 0.000000e+00, 1.000000e+00, 0.000000e+00
+Points of inner and intersect: 0, 0
+Merged polygon (poly1, poly2) points: 4
+Point: -2.000000e+00, -2.000000e+00, 0.000000e+00
+Point: 2.000000e+00, -2.000000e+00, 0.000000e+00
+Point: 2.000000e+00, 2.000000e+00, 0.000000e+00
+Point: -2.000000e+00, 2.000000e+00, 0.000000e+00
+Points of inner and intersect: 3, 0
+Merged polygon (poly2, poly1) points: 4
+Point: -2.000000e+00, -2.000000e+00, 0.000000e+00
+Point: 2.000000e+00, -2.000000e+00, 0.000000e+00
+Point: 2.000000e+00, 2.000000e+00, 0.000000e+00
+Point: -2.000000e+00, 2.000000e+00, 0.000000e+00
+-----------------------------
+Case: 24 - Collinear Edge Overlap with Vertex Inside
+Points of inner and intersect: 0, 4
+Intersection (poly1, poly2) points: 3
+Point: 5.000000e-01, 1.000000e+00, 0.000000e+00
+Point: -5.000000e-01, 0.000000e+00, 0.000000e+00
+Point: 1.500000e+00, 0.000000e+00, 0.000000e+00
+Points of inner and intersect: 0, 4
+Intersection (poly2, poly1) points: 3
+Point: 1.500000e+00, 0.000000e+00, 0.000000e+00
+Point: 5.000000e-01, 1.000000e+00, 0.000000e+00
+Point: -5.000000e-01, 0.000000e+00, 0.000000e+00
+Points of inner and intersect: 0, 4
+Merged polygon (poly1, poly2) points: 5
+Point: -1.500000e+00, 0.000000e+00, 0.000000e+00
+Point: 1.500000e+00, 0.000000e+00, 0.000000e+00
+Point: 2.000000e+00, 0.000000e+00, 0.000000e+00
+Point: 5.000000e-01, 1.000000e+00, 0.000000e+00
+Point: 0.000000e+00, 1.500000e+00, 0.000000e+00
+Points of inner and intersect: 0, 4
+Merged polygon (poly2, poly1) points: 5
+Point: -5.000000e-01, 0.000000e+00, 0.000000e+00
+Point: 2.000000e+00, 0.000000e+00, 0.000000e+00
+Point: 5.000000e-01, 1.000000e+00, 0.000000e+00
+Point: 0.000000e+00, 1.500000e+00, 0.000000e+00
+Point: -1.500000e+00, 0.000000e+00, 0.000000e+00
+-----------------------------
+Case: 25 - T-Junction with Vertex on Edge
+Points of inner and intersect: 0, 2
+Intersection (poly1, poly2) points: 3
+Point: 1.000000e+00, 5.000000e-01, 0.000000e+00
+Point: -1.000000e+00, 5.000000e-01, 0.000000e+00
+Point: 0.000000e+00, -1.000000e+00, 0.000000e+00
+Points of inner and intersect: 2, 2
+Intersection (poly2, poly1) points: 3
+Point: 0.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 1.000000e+00, 5.000000e-01, 0.000000e+00
+Point: -1.000000e+00, 5.000000e-01, 0.000000e+00
+Points of inner and intersect: 0, 2
+Merged polygon (poly1, poly2) points: 5
+Point: -1.500000e+00, -1.000000e+00, 0.000000e+00
+Point: 0.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 1.500000e+00, -1.000000e+00, 0.000000e+00
+Point: 1.500000e+00, 1.500000e+00, 0.000000e+00
+Point: -1.500000e+00, 1.500000e+00, 0.000000e+00
+Points of inner and intersect: 2, 2
+Merged polygon (poly2, poly1) points: 5
+Point: 0.000000e+00, -1.000000e+00, 0.000000e+00
+Point: 1.500000e+00, -1.000000e+00, 0.000000e+00
+Point: 1.500000e+00, 1.500000e+00, 0.000000e+00
+Point: -1.500000e+00, 1.500000e+00, 0.000000e+00
+Point: -1.500000e+00, -1.000000e+00, 0.000000e+00
